@@ -21,6 +21,7 @@
     "start": "NODE_ENV=test node esp8266-websocket-server"
   },
   "devDependencies": {
+    "codecov": "^1.0.1",
     "mocha": "^2.4.5"
   },
   "license": "MIT License"
