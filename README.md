@@ -1,4 +1,4 @@
-![](http://res.cloudinary.com/jollen/image/upload/v1455862763/devify-logo_rh63vl.png)
+![](http://res.cloudinary.com/jollen/image/upload/h_110/v1455862763/devify-logo_rh63vl.png)
 
 # devify-server
 
