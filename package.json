@@ -1,0 +1,21 @@
+{
+  "name": "devify-starter",
+  "version": "1.0.0",
+  "description": "Boilerplate for IoT cloud servers",
+  "keywords": [
+    "iot"
+  ],
+  "author": "jollen <jollen@jollen.org> (http://jollen.org/)",
+  "main": "index.js",
+  "homepage": "https://github.com/DevifyPlatform/devify-starter.git",
+  "dependencies": {
+    "bl": "^0.9.4",
+    "coap": "^0.10.3",
+    "util": "^0.10.3",
+    "utils-merge": "^1.0.0",
+    "websocket": "^1.0.17",
+    "wotcity.io": "*"
+  },
+  "devDependencies": {},
+  "license": "MIT License"
+}
