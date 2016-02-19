@@ -16,6 +16,11 @@
     "websocket": "^1.0.17",
     "wotcity.io": "*"
   },
-  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
   "license": "MIT License"
 }
