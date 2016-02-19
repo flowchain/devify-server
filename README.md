@@ -2,6 +2,8 @@
 
 # devify-server
 
+[![Build Status](https://travis-ci.org/DevifyPlatform/devify-server.svg?branch=master)](https://travis-ci.org/DevifyPlatform/devify-server)
+
 devify-server is a light weight and very simple IoT server for hardware devices. It aims to provide an open source solution as easy as possible for IoT device communication over the web.
 
 devify-server is also a boilerplate for getting started with IoT cloud servers. It gets you up to speed using IoT and web technologies.
