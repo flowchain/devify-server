@@ -8,11 +8,9 @@ devify-server is a light weight and very simple IoT server for hardware devices.
 
 devify-server is also a boilerplate for getting started with IoT cloud servers. It gets you up to speed using IoT and web technologies.
 
-- [Website](http://devify.io)
-
 ##Quickstart
 
-A cli tool [devify-cli](https://github.com/DevifyPlatform/devify-cli) for getting started with *devify*.
+A cli tool [devify-cli](https://github.com/DevifyPlatform/devify-cli) is available for getting started with *devify*.
 
 ```
 $ npm install -g devify-cli
