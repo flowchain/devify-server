@@ -17,7 +17,8 @@
     "wotcity.io": "*"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "NODE_ENV=test node esp8266-websocket-server"
   },
   "devDependencies": {
     "mocha": "^2.4.5"
