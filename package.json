@@ -7,7 +7,11 @@
   ],
   "author": "jollen <jollen@jollen.org> (http://jollen.org/)",
   "main": "index.js",
-  "homepage": "https://github.com/DevifyPlatform/devify-starter.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevifyPlatform/devify-server.git"
+  },
+  "homepage": "https://github.com/DevifyPlatform/devify-server.git",
   "dependencies": {
     "bl": "^0.9.4",
     "coap": "^0.10.3",
