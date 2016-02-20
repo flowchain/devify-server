@@ -70,6 +70,10 @@ Server.prototype.onNewThing = function(thing) {
   this.registerThing(thing);
 };
 
+Server.prototype.onData = function(payload) {
+  console.log('<DATA> ' + payload.data);
+};
+
 /**
  * Create an WoT server.
  *
@@ -99,6 +103,7 @@ Server.prototype.start = function() {
 
   // Events
   server.on('newThing', this.onNewThing.bind(this));
+  server.on('data', this.onData.bind(this));
 
   server.start(router.route, wsHandlers);
 };
