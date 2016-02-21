@@ -8,6 +8,13 @@ devify-server is a light weight and very simple IoT server for communication wit
 
 devify-server is also a boilerplate for getting started with IoT cloud servers. It gets you up to speed using IoT and web technologies.
 
+## Design
+
+Devify servers has a simplify design of WoT framework.
+
+* Take advantage of broker pattern architecture
+* Thing modeling (thing description in JSON)
+
 ##Quickstart
 
 A cli tool [devify-cli](https://github.com/DevifyPlatform/devify-cli) is available for getting started with *devify*.
