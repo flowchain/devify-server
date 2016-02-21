@@ -63,10 +63,16 @@ var Server = function () {
 };
 
 /**
- * Event Callback System
+ * The server event handlers
  */
 Server.prototype.onNewThing = function(thing) {
-  // Call framework APIs
+  // at this server, the thing description is included via a local file
+  // or it can be accessed by invoking HTTP api from remote device
+  var def = require('./thing');
+  var thing = merge(def, thing);
+
+  // register a new thing to WoT framework
+  console.log(thing);
   this.registerThing(thing);
 };
 
@@ -101,7 +107,7 @@ Server.prototype.start = function() {
   });
   var router = new WebsocketRouter();
 
-  // Events
+  // Thing Events
   server.on('newThing', this.onNewThing.bind(this));
   server.on('data', this.onData.bind(this));
 
