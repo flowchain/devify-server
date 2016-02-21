@@ -10,10 +10,11 @@ devify-server is also a boilerplate for getting started with IoT cloud servers. 
 
 ## Design
 
-Devify servers has a simplify design of WoT framework.
+Devify has a simplified design of WoT framework.
 
 * Take advantage of broker pattern architecture
 * Thing modeling (thing description in JSON)
+* URI based communications (supoprt CoAP/WebSocket)
 
 ##Quickstart
 
