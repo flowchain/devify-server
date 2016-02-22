@@ -1,2 +1,2 @@
-var server = require('./coap-broker');
+var server = require('./libs/coap-broker');
 server.start();

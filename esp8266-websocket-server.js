@@ -1,2 +1,2 @@
-var server = require('./websocket-broker');
+var server = require('./libs/websocket-broker');
 server.start();

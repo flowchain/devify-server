@@ -1,4 +1,4 @@
-var server = require('./libs/websocket-broker');
+var server = require('./libs/coap-broker');
 
 var onmessage = function(message) {
 	var obj = JSON.parse(message.data);
@@ -8,8 +8,6 @@ var onmessage = function(message) {
 
 var onnewthing = function(thing) {
 	var data = JSON.stringify(thing);
-
-	console.log('<NEW_THING> ' + data);
 }
 
 server.start({
