@@ -59,7 +59,6 @@ var wsHandlers = {
  * Prototype and Class
  */
 var Server = function () {
-
 };
 
 /**
@@ -72,12 +71,17 @@ Server.prototype.onNewThing = function(thing) {
   var thing = merge(def, thing);
 
   // register a new thing to WoT framework
-  console.log(thing);
   this.registerThing(thing);
+
+  if (typeof(this._options.onnewthing) === 'function') {
+    this._options.onnewthing(thing);
+  }
 };
 
 Server.prototype.onData = function(payload) {
-  console.log('<DATA> ' + payload.data);
+  if (typeof(this._options.onmessage) === 'function') {
+    this._options.onmessage(payload);
+  }
 };
 
 /**
@@ -88,6 +92,7 @@ Server.prototype.onData = function(payload) {
  */
 function createServer(options) {
   var instance = new Server();
+  instance._options = options;
   return merge(instance, options);
 }
 
@@ -97,9 +102,16 @@ function createServer(options) {
  * @return {None}
  * @api public
  */
-Server.prototype.start = function() {
+Server.prototype.start = function(options) {
   var port = process.env.PORT ? parseInt(process.env.PORT) : 8000;
   var host = process.env.HOST ? process.env.HOST : 'localhost';
+  var options = options || {};
+
+  for (var prop in options) {
+    if (options.hasOwnProperty(prop) 
+        && typeof(this._options[prop]) === 'undefined')
+      this._options[prop] = options[prop];
+  }
 
   var server = new WebsocketBroker({
     port: port,
@@ -107,7 +119,7 @@ Server.prototype.start = function() {
   });
   var router = new WebsocketRouter();
 
-  // Thing Events
+  // Thing events from WoT framework
   server.on('newThing', this.onNewThing.bind(this));
   server.on('data', this.onData.bind(this));
 
@@ -117,7 +129,10 @@ Server.prototype.start = function() {
 /**
  * Create the server instance.
  */
-var wsBrokerImpl = createServer({});
+var wsBrokerImpl = createServer({
+  events: {
+  }
+});
 
 /**
  * Combined server with framework instance.
