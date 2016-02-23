@@ -16,7 +16,7 @@ Devify has a simplified design of WoT framework.
 * Thing modeling (thing description in JSON)
 * URI based communications (supoprt CoAP/WebSocket)
 
-##Quickstart
+## Quickstart
 
 A cli tool [devify-cli](https://github.com/DevifyPlatform/devify-cli) is available for getting started with *devify*.
 
@@ -26,6 +26,11 @@ $ devify <your_new_project_dir>
 $ cd <your_new_project_dir>
 $ node esp8266-coap-server.js 
 ```
+
+## Getting started
+
+Please read [Connect IoT device to local host](https://wotcity.com/blog/2016/02/23/connect-iot-device-to-local-host/) for getting started with *Devify*.
+
 
 ## License
 
