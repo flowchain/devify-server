@@ -131,11 +131,11 @@ Once there is an incoming message from NodeMCU, the ```onmessage``` function wil
 
 Please add the above code to your ```esp8266-coap-server.js``` file, and get it restarted.
 
-This demo is simple. However, it's not the good way to get data from NodeMCU.
+This demo is simple. However, it's not the best practice to get data from NodeMCU.
 
 ### Resource-Oriented
 
-The good way to achieve the purpose of getting data from NodeMCU is to use ```coap://192.168.0.100:8000/object/12345678/viewer```.
+The best practice to achieve the purpose of getting data from NodeMCU is to use ```coap://192.168.0.100:8000/object/12345678/viewer```.
 
 Devify framework will automatically generate this URI for your NodeMCU device. The URI is the resource name of *NodeMCU data*.
 
