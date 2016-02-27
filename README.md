@@ -14,7 +14,7 @@ devify-server, or [*Devify*](https://github.com/DevifyPlatform/devify-server) in
 
 Devify is an open source project to develop the boilerplates for getting started with IoT cloud servers. It gets you up to speed using IoT and web technologies.
 
-Devify open source project, or **Devify** in short, is a software framework. Its goal is to create a new way to write IoT server code.
+Devify open source project, or **Devify**, is a software framework. Its goal is to create a new way to write IoT server code.
 
 ## Quickstart
 
