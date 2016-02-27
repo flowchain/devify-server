@@ -111,7 +111,7 @@ Then, it invokes ```start()``` method to start the server.
 server.start();
 ```
 
-The ```esp8266-coap-server.js``` demo doesn't print any thing on the screen. To print data received from NodeMCU at terminal console, you need to extend ```esp8266-coap-server.js```. Devify 101 section shows how to achieve this purpose. 
+The ```esp8266-coap-server.js``` demo doesn't print any thing on the screen. To print data received from NodeMCU at the terminal console, you need to modify ```esp8266-coap-server.js```. 
 
 To print the data sent from NodeMCU, give a ```onmessage``` function callback to ```start()```.
 
