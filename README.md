@@ -177,7 +177,7 @@ This URI style is defined in the underlying of Devify framework.
 
 ## Contribution
 
-Device is still under development. This project needs your help and contribution.
+Devify is still under development. This project needs your help and contribution.
 
 ## License
 
