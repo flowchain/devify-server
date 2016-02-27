@@ -83,8 +83,16 @@ cc = coap.Client()
 -- Make a POST request
 uri="coap://192.168.0.100:8000/object/12345678/send"
 
+-- Setup a timer to send ADC data
 tmr.alarm(0, 1000, 1, function() 
-    cc:post(uri, "{\"temp\":20}\r\n")
+    buf = 
+          "{" ..
+          "\"quality\":" ..
+          adc.read(0) ..
+          "}"
+    
+    cc:post(uri, buf)
+    print(buf)
 end)
 ```
 
