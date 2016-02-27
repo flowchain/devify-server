@@ -137,6 +137,20 @@ Devify has a simplified design of WoT framework.
 * Thing modeling (thing description in JSON)
 * URI based communications (supoprt CoAP/WebSocket)
 
+The URI style is as the following.
+
+```
+coap://127.0.0.1:8000/object/<ObjectID>/send
+```
+
+* *object* is the resource name
+* *&lt;ObjectID&gt;* is the unique ID of the resource. Please assign a string for your device.
+* *send* is the action which means *sending data to the server*
+
+This URI style is defined in the underlying of Devify framework.
+
+## Contribution
+
 Device is still under development. This project needs your help and contribution.
 
 ## License
