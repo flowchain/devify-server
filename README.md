@@ -169,9 +169,9 @@ The URI style is as the following.
 coap://127.0.0.1:8000/object/<ObjectID>/send
 ```
 
-* *object* is the resource name
-* *&lt;ObjectID&gt;* is the unique ID of the resource. Please assign a string for your device.
-* *send* is the action which means *sending data to the server*
+* **object** is the resource name
+* **&lt;ObjectID&gt;** is the unique ID of the resource. Please assign a string for your device.
+* **send** or **viewer** is the property of this resource. Use **send** to *send data to CoAP server*, and **viewer** to *view data from CoAP server*
 
 This URI style is defined in the underlying of Devify framework.
 
