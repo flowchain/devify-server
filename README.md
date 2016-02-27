@@ -139,7 +139,7 @@ The best practice to achieve the purpose of getting data from NodeMCU is to use 
 
 Devify framework will automatically generate this URI for your NodeMCU device. The URI is the resource name of *NodeMCU data*.
 
-Write Node.js code to read the resource of this URI ``````coap://192.168.0.100:8000/object/12345678/viewer``` is easy.
+Write Node.js code to read the resource of this URI ```coap://192.168.0.100:8000/object/12345678/viewer``` is easy.
 
 ```
 var coap = require('coap');
