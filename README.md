@@ -131,6 +131,32 @@ Once there is an incoming message from NodeMCU, the ```onmessage``` function wil
 
 Please add the above code to your ```esp8266-coap-server.js``` file, and get it restarted.
 
+This demo is simple. However, it's not the good way to get data from NodeMCU.
+
+### Resource-Oriented
+
+The good way to achieve the purpose of getting data from NodeMCU is to use ```coap://192.168.0.100:8000/object/12345678/viewer```.
+
+Devify framework will automatically generate this URI for your NodeMCU device. The URI is the resource name of *NodeMCU data*.
+
+Write Node.js code to read the resource of this URI ``````coap://192.168.0.100:8000/object/12345678/viewer``` is easy.
+
+```
+var coap = require('coap');
+
+var clientWriable = coap.request('coap://192.168.0.100:8000/object/12345678/viewer');
+
+clientWriable.on('response', function(res) {
+    res.pipe(process.stdout)
+});
+
+clientWriable.end();
+```
+
+Please save the code under your project folder (*esp_air_iot/* at this tutorial) as the file name *coap-view-data.js*. Then, execute *coap-view-data.js* by running ```node coap-view-data.js```.
+
+### Design
+
 Devify has a simplified design of WoT framework.
 
 * Take advantage of broker pattern architecture
