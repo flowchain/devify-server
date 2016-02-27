@@ -98,7 +98,7 @@ end)
 
 ## Developer
 
-For IoT developers, *Devify* is a tool which makes it easy to build IoT server using CoAP and WebSocket. It minimizes the time to write a **Hello, World** IoT server. The following explains how ```esp8266-coap-server.js``` works.
+For IoT developers, *Devify* is a software framework which makes it easy to build IoT server using CoAP and WebSocket. It minimizes the time to write a **Hello, World** IoT server. The following explains how ```esp8266-coap-server.js``` works.
 
 First, it requires ```./libs/coap-broker``` to get a CoAP server instance.
 
