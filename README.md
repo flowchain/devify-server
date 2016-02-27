@@ -25,7 +25,7 @@ $ cd <your_new_project_dir>
 $ node esp8266-coap-server.js 
 ```
 
-## Toturial
+## Tutorial
 
 This section introduces a new way to write a CoAP server for getting data from an NodeMCU (ESP8266) device.
 
