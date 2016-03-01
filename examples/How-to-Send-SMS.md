@@ -2,7 +2,7 @@
 
 A new way to write IoT application server code.
 
-# devify-server-send-sms
+# How-to-Send-SMS
 
 This project shows how to extend devify-server biolerplate to send an alert SMS.
 
@@ -14,7 +14,7 @@ This project shows how to extend devify-server biolerplate to send an alert SMS.
 
 ## Quickstart
 
-Twilio credentials consists of Sid and Token. Please replace ```&lt;YOUR-SID&gt;``` with your sid gave by twilio, and replace ```<YOUR-TOKEN>``` with your token.
+Twilio credentials consists of Sid and Token. Please replace ```<YOUR-SID>``` with your sid gave by twilio, and replace ```<YOUR-TOKEN>``` with your token.
 
 ```
 var server = require('./coap-broker');
@@ -46,7 +46,7 @@ var sms = function(message) {
 server.start({
 	onmessage: sms
 });
-
+```
 
 ## NodeMCU
 
