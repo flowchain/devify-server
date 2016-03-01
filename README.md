@@ -179,6 +179,8 @@ This URI style is defined in the underlying of Devify framework.
 
 ## More Examples
 
+A simple project using *IF-ELSE* programming model.
+
 * [How to Send SMS](examples/How-to-Send-SMS.md)
 
 ## Contribution
