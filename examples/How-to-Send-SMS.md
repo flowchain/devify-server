@@ -4,7 +4,7 @@ A new way to write IoT application server code.
 
 # How-to-Send-SMS
 
-This project shows how to extend devify-server biolerplate to send an alert SMS.
+This project shows how to extend devify-server biolerplate to send an alert SMS. Please read [Devify](https://github.com/DevifyPlatform/devify-server/blob/master/README.md) before continue to this project.
 
 ## Prerequisites
 
