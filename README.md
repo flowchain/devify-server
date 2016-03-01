@@ -177,6 +177,10 @@ coap://127.0.0.1:8000/object/<ObjectID>/send
 
 This URI style is defined in the underlying of Devify framework.
 
+## More Examples
+
+* [How to Send SMS](examples/How-to-Send-SMS.md)
+
 ## Contribution
 
 Devify is still under development. This project needs your help and contribution.
