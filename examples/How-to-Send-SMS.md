@@ -4,12 +4,20 @@ A new way to write IoT application server code.
 
 # devify-server-send-sms
 
-This project shows how to send alert SMS.
+This project shows how to extend devify-server biolerplate to send an alert SMS.
+
+## Prerequisites
+
+1. This project uses twilio APIs for text messaging. Please signup and get your own credentials at [twilio](https://www.twilio.com).
+
+2. This project uses [twilio](https://www.npmjs.com/package/twilio) npm module to invoke twilio REST APIs. Please run `$ npm install twilio` to install the latest version.
 
 ## Quickstart
 
+Twilio credentials consists of Sid and Token. Please replace ```&lt;YOUR-SID&gt;``` with your sid gave by twilio, and replace ```<YOUR-TOKEN>``` with your token.
+
 ```
-var server = require('./websocket-broker');
+var server = require('./coap-broker');
 
 // Twilio Credentials 
 var accountSid = '<YOUR-SID>'; 
@@ -38,3 +46,31 @@ var sms = function(message) {
 server.start({
 	onmessage: sms
 });
+
+
+## NodeMCU
+
+```
+-- Configure the ESP as a station (client)
+wifi.setmode(wifi.STATION)  
+wifi.sta.config("<SSID>", "<PASSWORD>")  
+wifi.sta.autoconnect(1)
+
+-- Create a CoAP client
+cc = coap.Client()
+
+-- Make a POST request
+uri="coap://192.168.0.100:8000/object/12345678/send"
+
+-- Setup a timer to send ADC data
+tmr.alarm(0, 8000, 1, function() 
+    buf = 
+          "{" ..
+          "\"temperature\":" ..
+          adc.read(0) ..
+          "}"
+    
+    cc:post(uri, buf)
+    print(buf)
+end)
+```
