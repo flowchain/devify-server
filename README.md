@@ -177,11 +177,31 @@ coap://127.0.0.1:8000/object/<ObjectID>/send
 
 This URI style is defined in the underlying of Devify framework.
 
+## Flow-Based Programming
+
+The above sections explains two different programming models. One is a single process with conventional *if..else...* programming model. The other is the concept of resource-oriented using URI model.
+
+However, both of these two examples programming models are not the vision of Devify project. The vision **A new way to write IoT application server code** is implemented by so-called flow-based programming (FBP).
+
+### fb0
+
+There is a small, simple and light-weight FBP runtime system called **fb0** inside the Devify framework. This system is heavily inspired by [J. Paul Morrison](http://www.jpaulmorrison.com/) and [NoFlo](https://github.com/noflo/noflo).
+
+The design of **fb0** is quite simple. It's neither *the classical* FBP by J. Paul Morrison, nor the *FBP-like* NoFlo.
+
+*fb0* is a *FBP-like* system and is a JavaScript system motivated by [J. Paul Morrison](http://www.jpaulmorrison.com/), and which uses a number of the same terms and concepts.
+
+NOTE: This is still under *develop* branch, and planed to be stable on June, 2016.
+
 ## More Examples
 
-A simple project using *IF-ELSE* programming model.
+A simple project of single process and *IF-ELSE* programming model.
 
 * [How to Send SMS](examples/How-to-Send-SMS.md)
+
+A simple project of flow-based IoT programming.
+
+* [How to Send SMS](examples/How-to-Flow-Based-CoAP.js)
 
 ## Contribution
 
