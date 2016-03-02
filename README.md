@@ -197,11 +197,11 @@ NOTE: This is still under *develop* branch, and planed to be stable on June, 201
 
 A simple project of single process and *IF-ELSE* programming model.
 
-* [How to Send SMS](examples/How-to-Send-SMS.md)
+* [How to Send SMS: The single process model](examples/How-to-Send-SMS.md)
 
-A simple project of flow-based IoT programming.
+A simple project of flow-based IoT programming. This is the same agenda with the above example, but turn the programming model into flow-based.
 
-* [How to Send SMS](examples/How-to-Flow-Based-CoAP.js)
+* [How to Send SMS: The flow-based programming](examples/How-to-Flow-Based-CoAP.js)
 
 ## Contribution
 
