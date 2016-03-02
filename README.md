@@ -181,13 +181,13 @@ This URI style is defined in the underlying of Devify framework.
 
 The above sections explain two different programming models. One is a single process with conventional *if..else...* programming model. The other is the concept of resource-oriented using URI model.
 
-However, both of these two examples programming models are not the vision of Devify project. The vision **A new way to write IoT application server code** is implemented by so-called flow-based programming (FBP).
+However, both of these two programming models are not the vision of Devify project. The vision **A new way to write IoT application server code** is implemented by so-called flow-based programming (FBP).
 
 ### fb0
 
-There is a small, simple and light-weight FBP runtime system called **fb0** inside the Devify framework. This system is heavily inspired by [J. Paul Morrison](http://www.jpaulmorrison.com/) and [NoFlo](https://github.com/noflo/noflo).
+There is a simple and light-weight FBP runtime system called **fb0** inside the Devify framework. This system is heavily inspired by [J. Paul Morrison](http://www.jpaulmorrison.com/) and [NoFlo](https://github.com/noflo/noflo). *fb0* is very tiny, and with only 300+ lines of code.
 
-The design of **fb0** is quite simple. It's neither *the classical* FBP by J. Paul Morrison, nor the *FBP-like* NoFlo.
+The design of **fb0** is also simple. It's neither *the classical* FBP by J. Paul Morrison, nor the *FBP-like* NoFlo.
 
 *fb0* is a *FBP-like* system and is a JavaScript system motivated by [J. Paul Morrison](http://www.jpaulmorrison.com/), and which uses a number of the same terms and concepts.
 
