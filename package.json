@@ -14,6 +14,7 @@
   "homepage": "https://github.com/DevifyPlatform/devify-server.git",
   "dependencies": {
     "bl": "^0.9.4",
+    "bluebird": "^3.3.3",
     "coap": "^0.10.3",
     "util": "^0.10.3",
     "utils-merge": "^1.0.0",
@@ -26,7 +27,8 @@
   },
   "devDependencies": {
     "codecov": "^1.0.1",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "twilio": "^2.9.0"
   },
   "license": "MIT License"
 }
