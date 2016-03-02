@@ -179,7 +179,7 @@ This URI style is defined in the underlying of Devify framework.
 
 ## Flow-Based Programming
 
-The above sections explains two different programming models. One is a single process with conventional *if..else...* programming model. The other is the concept of resource-oriented using URI model.
+The above sections explain two different programming models. One is a single process with conventional *if..else...* programming model. The other is the concept of resource-oriented using URI model.
 
 However, both of these two examples programming models are not the vision of Devify project. The vision **A new way to write IoT application server code** is implemented by so-called flow-based programming (FBP).
 
