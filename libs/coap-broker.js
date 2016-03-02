@@ -39,7 +39,8 @@ var WoT = require('wotcity.io');
 var Framework = WoT.Framework
   , CoapBroker = WoT.CoapBroker
   , Router = WoT.CoapRouter
-  , RequestHandlers = WoT.CoapRequestHandlers;
+  , RequestHandlers = WoT.CoapRequestHandlers
+  , Runtime = WoT.Runtime;
 
 /**
  * Util Modules
@@ -83,6 +84,14 @@ Server.prototype.onData = function(payload) {
   if (typeof(this._options.onmessage) === 'function') {
     this._options.onmessage(payload);
   }
+
+  // Send data to FBP network.
+  // This payload is came from devices.
+  var data = {
+    payload: payload,
+    _initial: 0
+  };
+  this._network.send(data);
 };
 
 /**
@@ -93,6 +102,11 @@ Server.prototype.onData = function(payload) {
  */
 function createServer(options) {
   var instance = new Server();
+
+  // Create FBP Runtime
+  var network = new Runtime();
+  instance._network = network;
+
   return merge(instance, options);
 }
 
@@ -112,6 +126,12 @@ Server.prototype.start = function(options) {
         && typeof(this._options[prop]) === 'undefined')
       this._options[prop] = options[prop];
   }
+
+  // Load components
+  this._network.load(this._options.components || {});
+
+  // Start FBP Network Runtime
+  this._network.runtime(this._options.graph || {});
 
   var server = new CoapBroker({
     port: port,
