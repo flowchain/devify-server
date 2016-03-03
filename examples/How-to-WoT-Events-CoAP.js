@@ -1,4 +1,4 @@
-var server = require('./libs/coap-broker');
+var server = require('../libs/coap-broker');
 
 var onmessage = function(message) {
 	var obj = JSON.parse(message.data);
