@@ -1,4 +1,4 @@
-var server = require('./libs/websocket-broker');
+var server = require('../libs/websocket-broker');
 
 var onmessage = function(message) {
 	var obj = JSON.parse(message.data);
