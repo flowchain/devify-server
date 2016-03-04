@@ -197,7 +197,7 @@ NOTE: This is still under *develop* branch, and planed to be stable on June, 201
 
 ## More Examples
 
-A simple project of single process and *IF-ELSE* programming model.
+A simple project of single process application (the monolithic application) and *IF-ELSE* programming model.
 
 * [How to Send SMS: The single process model](examples/How-to-Send-SMS.md)
 
