@@ -1,0 +1,3 @@
+{ "oauth_token_secret": "<your-token-secret>",
+  "oauth_token": "<your-oauth-token>",
+  "uid": "<your-uid>" }
