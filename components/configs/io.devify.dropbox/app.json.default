@@ -1,4 +1,0 @@
-{ "app_key": "<your-app-key>", 
-  "app_secret": "<your-app-secret>",
-  "root": "dropbox"
-}
