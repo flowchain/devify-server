@@ -24,8 +24,8 @@ A cli tool [devify-cli](https://github.com/DevifyPlatform/devify-cli) is availab
 
 ```
 $ npm install -g devify-cli
-$ devify <your_new_project_dir>
-$ cd <your_new_project_dir> && npm install
+$ devify new <new_project_dir>
+$ cd <new_project_dir> && npm install
 $ node esp8266-coap-server.js 
 ```
 
