@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "make test",
-    "start": "NODE_ENV=test node esp8266-websocket-server"
+    "start": "node ./esp8266-websocket-server.js"
   },
   "main": "libs/index.js",  
   "devDependencies": {
