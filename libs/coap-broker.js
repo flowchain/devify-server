@@ -117,8 +117,8 @@ function createServer(options) {
  * @api public
  */
 Server.prototype.start = function(options) {
-  var port = process.env.PORT ? parseInt(process.env.PORT) : 8000;
-  var host = process.env.HOST ? String(process.env.HOST) : 'localhost';
+  var port = process.env.PORT || 8000;
+  var host = process.env.HOST || 'localhost';
   var options = options || {};
   
   for (var prop in options) {
