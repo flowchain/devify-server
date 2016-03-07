@@ -201,9 +201,9 @@ A simple project of single process application (the monolithic application) and 
 
  * Go to the [Windows Azure Management Console](https://portal.azure.com/)
  * Select **App Services**
- * Select your web site, and go to the **All settings* page
+ * Select your web site, and go to the **All settings** page
  * Scroll down and select **Application settings** in the GENERAL label
- * Scroll down and switch **Web sockets ** to **On**
+ * Scroll down and switch the button of **Web sockets** to **On**
  * Click the **Save** icon
 
 * Use your web site URL to access Devify server. 
