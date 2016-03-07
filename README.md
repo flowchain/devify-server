@@ -193,7 +193,7 @@ A simple project of single process application (the monolithic application) and 
 
 * [How to Send SMS: The single process model](examples/How-to-Send-SMS.md)
 
-## Deplo to Azure
+## Deploy to Azure
 
 <a title="Deploy to Azure" href="https://deploy.azure.com/?repository=https://github.com/DevifyPlatform/devify-server" target="_blank"><img src="https://cloud.githubusercontent.com/assets/1126021/13560959/4e687ede-e461-11e5-83de-448bdf116e99.png"></a>
 
