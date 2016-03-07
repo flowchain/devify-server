@@ -193,9 +193,9 @@ A simple project of single process application (the monolithic application) and 
 
 * [How to Send SMS: The single process model](examples/How-to-Send-SMS.md)
 
-## Deployment
+## Deployment to Azure
 
-[](https://cloud.githubusercontent.com/assets/1126021/13560959/4e687ede-e461-11e5-83de-448bdf116e99.png)
+![](https://cloud.githubusercontent.com/assets/1126021/13560959/4e687ede-e461-11e5-83de-448bdf116e99.png)
 
 * Please click above button for one click to azure. Be sure to [Enable Web Sockets](https://azure.microsoft.com/zh-tw/blog/introduction-to-websockets-on-windows-azure-web-sites/) after deploying your Devify web site
 
