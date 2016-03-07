@@ -195,7 +195,9 @@ A simple project of single process application (the monolithic application) and 
 
 ## Deployment to Azure
 
-![](https://cloud.githubusercontent.com/assets/1126021/13560959/4e687ede-e461-11e5-83de-448bdf116e99.png)
+<a title="Deploy to Azure" href="https://deploy.azure.com/?repository=https://github.com/DevifyPlatform/devify-server" target="_blank"><img src="https://cloud.githubusercontent.com/assets/1126021/13560959/4e687ede-e461-11e5-83de-448bdf116e99.png"></a>
+
+Before start to use *devify-server* continue to develop your own. You can have the first experience of *devify-server* by deploying this basic *devify-server* boilerplate to Azure.
 
 * Please click above button for one click to azure. Be sure to [Enable Web Sockets](https://azure.microsoft.com/zh-tw/blog/introduction-to-websockets-on-windows-azure-web-sites/) after deploying your Devify web site
 
