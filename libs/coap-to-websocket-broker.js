@@ -119,6 +119,7 @@ function createServer(options) {
 Server.prototype.start = function(options) {
   var port = process.env.PORT || 8000;
   var host = process.env.HOST || 'localhost';
+  var endpoint = process.env.ENDPOINT || 'wot.city';
   var options = options || {};
   
   for (var prop in options) {
@@ -135,7 +136,8 @@ Server.prototype.start = function(options) {
 
   var server = new CoapBroker({
     port: port,
-    host: host
+    host: host,
+    endpoint: endpoint
   });
   var router = new Router();
 
