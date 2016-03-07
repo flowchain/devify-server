@@ -187,19 +187,24 @@ The above sections explain two different programming models. One is the monolith
 
 However, both of these two programming models are not the vision of Devify project. The vision **A new way to write IoT application server code** is implemented by so-called flow-based programming (FBP).
 
-### fb0
-
-There is a simple and light-weight FBP runtime system called **fb0** inside the Devify framework. This system is heavily inspired by [J. Paul Morrison](http://www.jpaulmorrison.com/) and [NoFlo](https://github.com/noflo/noflo). *fb0* is very tiny, and with only 300+ lines of code.
-
-The design of **fb0** is also simple. It's neither *the classical* FBP by J. Paul Morrison, nor the *FBP-like* NoFlo.
-
-*fb0* is a *FBP-like* system and is a JavaScript system motivated by [J. Paul Morrison](http://www.jpaulmorrison.com/), and which uses a number of the same terms and concepts.
-
 ## More Examples
 
 A simple project of single process application (the monolithic application) and *IF-ELSE* programming model.
 
 * [How to Send SMS: The single process model](examples/How-to-Send-SMS.md)
+
+## Deployment
+
+[](https://cloud.githubusercontent.com/assets/1126021/13560959/4e687ede-e461-11e5-83de-448bdf116e99.png)
+
+* Please click above button for one click to azure. Be sure to [Enable Web Sockets](https://azure.microsoft.com/zh-tw/blog/introduction-to-websockets-on-windows-azure-web-sites/) after deploying your Devify web site
+
+ * Go to the [Windows Azure Management Console](https://portal.azure.com/)
+ * Select **App Services**
+ * Select your web site, and go to the **All settings* page
+ * Scroll down and select **Application settings** in the GENERAL label
+ * Scroll down and switch **Web sockets ** to **On**
+ * Click the **Save** icon
 
 ## Contribution
 
