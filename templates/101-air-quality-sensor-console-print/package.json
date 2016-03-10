@@ -6,7 +6,6 @@
     "iot"
   ],
   "author": "jollen <jollen@jollen.org> (http://jollen.org/)",
-  "main": "libs/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DevifyPlatform/devify-server.git"
