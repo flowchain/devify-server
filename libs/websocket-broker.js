@@ -82,6 +82,14 @@ Server.prototype.onData = function(payload) {
   if (typeof(this._options.onmessage) === 'function') {
     this._options.onmessage(payload);
   }
+
+  // Send hardware data to FBP network.
+  var data = {
+    upproc: 'devify-device',
+    upport: 'out'
+    payload: payload
+  };
+  this._network.send(data);
 };
 
 /**

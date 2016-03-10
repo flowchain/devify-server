@@ -85,11 +85,11 @@ Server.prototype.onData = function(payload) {
     this._options.onmessage(payload);
   }
 
-  // Send data to FBP network.
-  // This payload is came from devices.
+  // Send hardware data to FBP network.
   var data = {
-    payload: payload,
-    _initial: 0
+    upproc: 'devify-device',
+    upport: 'out'
+    payload: payload
   };
   this._network.send(data);
 };
