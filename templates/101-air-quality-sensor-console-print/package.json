@@ -16,7 +16,7 @@
     "bl": "^0.9.4",
     "bluebird": "^3.3.3",
     "coap": "^0.10.3",
-    "devify-server": "^2.0.3",
+    "devify-server": "*",
     "util": "^0.10.3",
     "utils-merge": "^1.0.0",
     "websocket": "^1.0.17",
