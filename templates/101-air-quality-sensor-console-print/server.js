@@ -1,4 +1,4 @@
-var server = require('../../libs/coap-broker');
+var server = require('devify.io-server').coapBroker;
 
 var onmessage = function(message) {
     // Parse strings to JSON object.
