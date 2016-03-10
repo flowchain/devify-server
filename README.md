@@ -199,7 +199,7 @@ A simple project of single process application (the monolithic application) and 
 
 Before start to use *devify-server* and continue to develop your own. You can have the first experience of *devify-server* by deploying this basic *devify-server* boilerplate to Azure.
 
-* Please click above button for one click to azure. Be sure to [Enable Web Sockets](https://azure.microsoft.com/zh-tw/blog/introduction-to-websockets-on-windows-azure-web-sites/) after deploying your Devify web site
+* Please click above button for one click to azure. Be sure to [Enable Web Sockets](https://azure.microsoft.com/zh-tw/blog/introduction-to-websockets-on-windows-azure-web-sites/) after deploying your web site.
 
  * Go to the [Windows Azure Management Console](https://portal.azure.com/)
  * Select **App Services**
@@ -219,8 +219,8 @@ Before start to use *devify-server* and continue to develop your own. You can ha
 
  * Open *test/test.websocket.send.js* file
  * Modify this line: ```client.connect('ws://localhost:8000/object/5550937980d51931b3000009/send', '');``` to meet your web site URL. For the example above ```client.connect('ws://devify-server88de.azurewebsites.net/object/5550937980d51931b3000009/send', '');```
- * The Devify framework will generate a URI for sending the received messages, use ```ws://devify-server88de.azurewebsites.net/object/5550937980d51931b3000009/viewer``` to received real-time messages from the server.
- * The ```5550937980d51931b3000009``` is the device ID. You can modify it and give your favor string.
+ * The Devify framework will generate a URI for sending the received messages, use ```ws://devify-server88de.azurewebsites.net/object/5550937980d51931b3000009/viewer``` to receive real-time messages from the server.
+ * The string ```5550937980d51931b3000009``` is the device ID. You can modify it and give a favor string.
 
 ## Contribution
 

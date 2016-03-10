@@ -6,7 +6,7 @@
     "iot"
   ],
   "author": "jollen <jollen@jollen.org> (http://jollen.org/)",
-  "main": "index.js",
+  "main": "libs/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DevifyPlatform/devify-server.git"
@@ -25,7 +25,6 @@
     "test": "make test",
     "start": "node ./esp8266-websocket-server.js"
   },
-  "main": "libs/index.js",  
   "devDependencies": {
     "codecov": "^1.0.1",
     "mocha": "^2.4.5",
