@@ -89,6 +89,7 @@ end)
 
 The work of modifying the code is just the same with the chapter [101-air-quality-sensor-console-print](../101-air-quality-sensor-console-print).
 
+Please read [Quickstart](101-air-quality-sensor-console-print#quickstart) to run this project.
 
 ## Next
 
