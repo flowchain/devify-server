@@ -4,6 +4,8 @@ ESP8266 over the Web: Getting started with IoT System Architecture
 
 # Project Goal
 
+![](https://cloud.githubusercontent.com/assets/1126021/13699804/b9498212-e7b7-11e5-99e3-734ac6bf91da.png)
+
 The use scenario of this project.
 
 * Send an alert message by SMS when the air quality is not good
