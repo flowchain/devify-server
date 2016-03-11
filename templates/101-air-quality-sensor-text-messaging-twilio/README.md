@@ -1,10 +1,15 @@
 ![](http://res.cloudinary.com/jollen/image/upload/h_110/v1455862763/devify-logo_rh63vl.png)
 
-A new way to write IoT application server code.
+ESP8266 over the Web: Getting started with IoT System Architecture
 
-# How-to-Send-SMS
+# Project Goal
 
-This project shows how to extend devify-server biolerplate to send an alert SMS. Please read [Devify](https://github.com/DevifyPlatform/devify-server/blob/master/README.md) before continue to this project.
+The use scenario of this project.
+
+* Send an alert message by SMS when the air quality is not good
+* Understanding Devify
+
+This project shows how to extend devify-server biolerplate to send an alert SMS. Please read [Devify](https://github.com/DevifyPlatform/devify-server/blob/master/README.md) to understand Devify in a bit before continue to this project.
 
 ## Prerequisites
 
@@ -12,7 +17,7 @@ This project shows how to extend devify-server biolerplate to send an alert SMS.
 
 2. This project uses [twilio](https://www.npmjs.com/package/twilio) npm module to invoke twilio REST APIs. Please run `$ npm install twilio` to install the latest version.
 
-## Quickstart
+## Getting Started
 
 Twilio credentials consists of Sid and Token. Please replace ```<YOUR-SID>``` with your sid gave by twilio, and replace ```<YOUR-TOKEN>``` with your token.
 
@@ -66,7 +71,7 @@ uri="coap://192.168.0.100:8000/object/12345678/send"
 tmr.alarm(0, 8000, 1, function() 
     buf = 
           "{" ..
-          "\"temperature\":" ..
+          "\"quality\":" ..
           adc.read(0) ..
           "}"
     
