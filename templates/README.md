@@ -8,7 +8,7 @@ ESP8266 over the Web: Getting started with IoT System Architecture
 [![Build Status](https://travis-ci.org/DevifyPlatform/devify-server.svg?branch=master)](https://travis-ci.org/DevifyPlatform/devify-server)
 [![GitHub license](https://img.shields.io/github/license/DevifyPlatform/devify-server.svg)](https://github.com/DevifyPlatform/devify-server)
 
-[*devify-server*](https://github.com/DevifyPlatform/devify-server) is a simple IoT server boilerplate. The goal is this ebook is to promote *devify-server* open source project.
+[*devify-server*](https://github.com/DevifyPlatform/devify-server) is a simple IoT server boilerplate. One of the goals of this ebook is to introduce *devify-server* open source project.
 
 ## Who should read
 
