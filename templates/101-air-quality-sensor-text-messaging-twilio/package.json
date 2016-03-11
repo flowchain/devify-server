@@ -1,5 +1,5 @@
 {
-  "name": "101-air-quality-sensor-console-print",
+  "name": "101-air-quality-sensor-text-messaging-twilio",
   "version": "1.0.0",
   "description": "Boilerplate for IoT cloud servers",
   "keywords": [
