@@ -14,11 +14,11 @@ var sms = 0;
 var sms = function(message) {
 	var obj = JSON.parse(message.data);
 
-	if (obj.temperature >= 50) {
+	if (obj.quality >= 350) {
 		client.messages.create({ 
 			to: "<TO-PHONE-NUMBER>", 
 			from: "<FROM-PHONE-NUMBER>", 
-			body: "Wearning! Temperature is too high: " + obj.temperature,   
+			body: "The air is too bad: " + obj.quality,   
 		}, function(err, result) { 
 			console.log(result.sid); 
 		});

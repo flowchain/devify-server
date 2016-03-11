@@ -6,8 +6,8 @@ ESP8266 over the Web: Getting started with IoT System Architecture
 
 The use scenario of this project.
 
-* Send an alert message by SMS when the air quality is not good
-* Understanding Devify
+* Send an alert message by email when the air quality is not good
+* Lean how to invoke SendGrid APIs
 
 This project shows how to extend devify-server biolerplate to send an alert SMS. Please read [Devify](https://github.com/DevifyPlatform/devify-server/blob/master/README.md) to understand Devify in a bit before continue to this project.
 
@@ -15,47 +15,63 @@ This project shows how to extend devify-server biolerplate to send an alert SMS.
 
 0. Understanding [101-air-quality-sensor-console-print](../101-air-quality-sensor-console-print)
 
-1. This project uses twilio APIs for text messaging. Please signup and get your own credentials at [twilio](https://www.twilio.com).
+1. This project uses SendGrid APIs for sending emails. Please signup and get your own credentials at [SendGrid](https://sendgrid.com/).
 
-2. This project uses [twilio](https://www.npmjs.com/package/twilio) npm module to invoke twilio REST APIs. Please run `$ npm install twilio` to install the latest version.
-
-3. Please copy ```config.json.example``` to ```config.json```.
+2. Please copy ```config.json.example``` to ```config.json```.
 
 ## Getting Started
 
-Twilio credentials consists of Sid and Token. Please open ```config.json``` and put on your credentials.
+Please open ```config.json``` and put on your username and password of SendGrid.
 
 ```
 var server = require('devify-server').coapBroker;
 
-// Twilio Credentials 
+// The email utility
+var email = require('./utilities/email');
+
 // Sendgrid credentials.
 var fs = require('fs');
-var app = JSON.parse(fs.readFileSync(__dirname + '/config.json'));
- 
-//require the Twilio module and create a REST client 
-var client = require('twilio')(app.accountSid, app.authToken); 
+var credentials = JSON.parse(fs.readFileSync(__dirname + '/config.json'));
 
-var sms = 0;
+// Last time we have sent an email.
+var last = 0;
+        
+var onmessage = function(message) {
+    // Parse strings to JSON object.
+    var obj = JSON.parse(message.data);
 
-// override '.onData()' event handler
-var sms = function(message) {
-	var obj = JSON.parse(message.data);
+    // Put a timestamp in the message
+    var now = Math.floor(Date.now() / 1000); 
+    obj.timestamp = now;
 
-	if (obj.quality >= 350) {
-		client.messages.create({ 
-			to: "<TO-PHONE-NUMBER>", 
-			from: "<FROM-PHONE-NUMBER>", 
-			body: "The air is too bad: " + obj.quality,   
-		}, function(err, result) { 
-			console.log(result.sid); 
-		});
-	}
-}
+    // Don't send too many emails.
+    if (now - last < 60)
+    	// We have sent an email in 60 seconds.
+    	return;
+
+	email({
+		credentials: credentials,
+
+	    from: 'jollen <jollen@jollen.org>',
+	    to: 'jollen <jollen@jollen.org>',
+	    replyTo: 'jollen <jollen@jollen.org>',
+	    subject: 'ESP8266 Air Quality',
+	    text: JSON.stringify(message.data),
+
+	    success: function(message) {
+	    	last = now;
+	        console.log('Email sent: ' + last);
+	    },
+	    error: function(err) {
+	        console.log('Email failed: ' + err);
+	    }
+	});
+};
 
 server.start({
-	onmessage: sms
+    onmessage: onmessage,
 });
+
 ```
 
 ## NodeMCU
@@ -92,4 +108,4 @@ The work of modifying the code is just the same with the chapter [101-air-qualit
 
 ## Next
 
-* [102-air-quality-sensor-email](102-air-quality-sensor-email)
+* To be continued.
