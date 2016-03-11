@@ -13,9 +13,14 @@ The use scenario of this project.
 
 ## Quickstart
 
-1. **Device side**. Connect your ESP8266 to WiFi AP, the Lua source code shown at the following section.
+### Device side
 
-2. **Server side**. Run *server.js* of this project at your host PC, your host PC needs [Node.js](https://nodejs.org) runtime.
+* Connect your ESP8266 to WiFi AP
+* Run [esp8266/coap-air-quality.lua](esp8266/coap-air-quality.lua] of this project
+
+### Server Side
+
+Run *server.js* of this project at your host PC:
 
 ```
 $ npm install
