@@ -1,6 +1,7 @@
 ![](http://res.cloudinary.com/jollen/image/upload/h_110/v1455862763/devify-logo_rh63vl.png)
 
 ESP8266 over the Web: Getting started with IoT System Architecture
+3 Lessons for IoT Beginners: ESP8266 Sensing Network over the Web
 
 # Introduction
 

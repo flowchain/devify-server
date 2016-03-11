@@ -74,6 +74,8 @@ server.start({
 
 ```
 
+Please replace ```from```, ```to```, ```replyTo```, ```subject```, and ```text``` with yours. The ```text``` property is the text context of this email.
+
 ## NodeMCU
 
 The full source list is as the following.
