@@ -11,11 +11,21 @@ The use scenario of this project.
 * Setup a CoAP server at your host PC
 * Print the data on the screen when CoAP server receives the data from ESP8266
 
+## Prerequisites
+
+1. [Node.js](https://nodejs.org). Note: Node should be with a version above 4.3
+2. ESP8266 or NodeMCU development kit
+3. Air quality sensor or any other analog in sensors
+
+![](https://cloud.githubusercontent.com/assets/1126021/13700095/beb9fa90-e7b9-11e5-8f61-a729ce3e1016.JPG)
+
+Figure-1: Connect an air quality sensor to a NodeMCU development kit.
+
 ## Quickstart
 
 ![The use cases that we're going to achieve in the next two lessons](https://cloud.githubusercontent.com/assets/1126021/13699804/b9498212-e7b7-11e5-99e3-734ac6bf91da.png)
 
-Figure: The use cases that we're going to achieve in the next two lessons.
+Figure-2: The use cases that we're going to achieve in the next two lessons.
 
 ### Device Side
 
