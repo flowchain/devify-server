@@ -13,14 +13,14 @@ The use scenario of this project.
 
 ## Quickstart
 
-### Device side
+### Device Side
 
 * Connect your ESP8266 to WiFi AP
-* Run [esp8266/coap-air-quality.lua](esp8266/coap-air-quality.lua] of this project
+* Run [coap-air-quality.lua](esp8266/coap-air-quality.lua) in this project
 
 ### Server Side
 
-Run *server.js* of this project at your host PC:
+* Run *server.js* in this project at your host PC
 
 ```
 $ npm install
