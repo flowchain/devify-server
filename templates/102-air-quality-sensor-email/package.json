@@ -1,0 +1,26 @@
+{
+  "name": "101-air-quality-sensor-email",
+  "version": "1.0.0",
+  "description": "Boilerplate for IoT cloud servers",
+  "keywords": [
+    "iot"
+  ],
+  "author": "jollen <jollen@jollen.org> (http://jollen.org/)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevifyPlatform/devify-server.git"
+  },
+  "homepage": "https://github.com/DevifyPlatform/devify-server.git",
+  "dependencies": {
+    "devify-server": "*",
+    "nodemailer": "^2.3.0",
+    "smtpapi": "^1.2.0"
+  },
+  "scripts": {
+    "test": "make test",
+    "start": "node ./server.js"
+  },
+  "devDependencies": {
+  },
+  "license": "MIT License"
+}
