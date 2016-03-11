@@ -11,14 +11,27 @@ The use scenario of this project.
 * Setup a CoAP server at your host PC
 * Print the data on the screen when CoAP server receives the data from ESP8266
 
+## Quickstart
+
+1. **Device side**. Connect your ESP8266 to WiFi AP, the Lua source code shown at the following section.
+
+2. **Server side**. Run *server.js* of this project at your host PC, your host PC needs [Node.js](https://nodejs.org) runtime.
+
+```
+$ npm install
+$ export HOST=<server-ip-address>
+$ export PORT=<listening-port>
+$ npm start
+```
+
 ## Getting Started
 
 For IoT developers, *Devify* is a software framework which makes it easy to build IoT server using CoAP and WebSocket. It minimizes the time to write a **Hello, World** IoT server. The following explains how ```esp8266-coap-server.js``` works.
 
-First, it requires ```./libs/coap-broker``` to get a CoAP server instance.
+First, it requires ```devify-server``` library and get a CoAP server instance.
 
 ```
-var server = require('./libs/coap-broker');
+var server = require('devify-server').coapBroker;
 ```
 Then, it invokes ```start()``` method to start the server.
 
