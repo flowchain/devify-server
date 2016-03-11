@@ -13,6 +13,8 @@ The use scenario of this project.
 
 ## Quickstart
 
+![The use cases that we're going to achieve in the next two lessons](https://cloud.githubusercontent.com/assets/1126021/13699804/b9498212-e7b7-11e5-99e3-734ac6bf91da.png)
+
 ### Device Side
 
 * Connect your ESP8266 to WiFi AP
