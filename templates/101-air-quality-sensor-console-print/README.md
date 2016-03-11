@@ -62,11 +62,17 @@ server.start({
 	onmessage: onmessage,
 });
 ```
-Once there is an incoming message from NodeMCU, the ```onmessage``` function will be called with one parameter of *Object* type. The  data is stored at ```data``` property of the object.
+Once there is an incoming message from NodeMCU, the ```onmessage``` function will be called with one parameter of *Object* type. The data from ESP8266 is stored at the ```data``` property. The data from ESP8266 is in JSON string format. To read this data, it should be parsed into *Object* type.
+
+```
+var obj = JSON.parse(message.data);
+```
 
 This demo is simple. However, it's not the best practice to get data from NodeMCU.
 
 ## NodeMCU
+
+The full source list is as the following.
 
 ```
 -- Configure the ESP as a station (client)
@@ -92,6 +98,10 @@ tmr.alarm(0, 8000, 1, function()
     print(buf)
 end)
 ```
+
+Please modify the ```uri``` variable to the real CoAP server URI. Basically, the IP address and the listening port need to be fixed.
+
+The ```buf``` variable stores the JSON string (aka JSON document) which includes the air quality data. Finally, the JSON string will be sent to your server over the web via COAP.
 
 ## Understanding Resource-Oriented
 
