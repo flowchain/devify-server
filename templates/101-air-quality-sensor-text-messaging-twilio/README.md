@@ -92,4 +92,4 @@ The work of modifying the code is just the same with the chapter [101-air-qualit
 
 ## Next
 
-* [102-air-quality-sensor-email](102-air-quality-sensor-email)
+* [102-air-quality-sensor-email](../102-air-quality-sensor-email)
