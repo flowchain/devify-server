@@ -68,7 +68,7 @@ Once there is an incoming message from NodeMCU, the ```onmessage``` function wil
 var obj = JSON.parse(message.data);
 ```
 
-This demo is simple. However, it's not the best practice to get data from NodeMCU.
+This demo is simple. However, it's not the best practice to get data from NodeMCU. The best practice is explained at [Understanding Resource-Oriented](#understanding-resource-oriented).
 
 ## NodeMCU
 
