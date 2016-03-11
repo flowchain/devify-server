@@ -15,10 +15,11 @@ ESP8266 over the Web: Getting started with IoT System Architecture
 * People who are interested in using ESP8266 for developing IoT devices, and
 * Want to develop IoT cloud servers to connect their devices over the web.
 
-## Lessons
+## Ebook
 
 There are several lessons from level 101 to level 201.
 
 * [101-air-quality-sensor-console-print](101-air-quality-sensor-console-print)
 * [101-air-quality-sensor-text-messaging-twilio](101-air-quality-sensor-text-messaging-twilio)
 * [102-air-quality-sensor-email](102-air-quality-sensor-email)
+

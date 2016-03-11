@@ -116,3 +116,11 @@ coap://127.0.0.1:8000/object/<ObjectID>/send
 * **send** or **viewer** is the property of this resource. Use **send** to *send data to CoAP server*, and **viewer** to *view data from CoAP server*
 
 This URI style is defined in the underlying of Devify framework.
+
+## Flow-Based Programming
+
+**NOTE:** This is under development, and which is planned to be first released on June, 2016. Please refer to [devify-graph](https://github.com/DevifyPlatform/devify-graph) project later for flow-based IoT programming.
+
+This chapter explains two different programming models. One is the monolithic application (aka single process) with conventional *if..else...* programming model. The other is the concept of resource-oriented using URI model.
+
+However, both of these two programming models are not the vision of Devify project. The vision **A new way to write IoT application server code** is implemented by so-called flow-based programming (FBP).
