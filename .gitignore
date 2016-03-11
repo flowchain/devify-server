@@ -36,3 +36,6 @@ node_modules
 
 # Configuration files
 components/configs/*/*.conf
+
+# Config files
+config.json

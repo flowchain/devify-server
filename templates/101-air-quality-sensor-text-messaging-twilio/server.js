@@ -1,11 +1,12 @@
 var server = require('devify-server').coapBroker;
 
 // Twilio Credentials 
-var accountSid = '<YOUR-SID>'; 
-var authToken = '<YOUR-TOKEN>'; 
+// Sendgrid credentials.
+var fs = require('fs');
+var app = JSON.parse(fs.readFileSync(__dirname + '/config.json'));
  
 //require the Twilio module and create a REST client 
-var client = require('twilio')(accountSid, authToken); 
+var client = require('twilio')(app.accountSid, app.authToken); 
 
 var sms = 0;
 

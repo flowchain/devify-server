@@ -12,13 +12,13 @@
   },
   "homepage": "https://github.com/DevifyPlatform/devify-server.git",
   "dependencies": {
-    "devify-server": "*"
+    "devify-server": "*",
+    "twilio": "^2.9.0"
   },
   "scripts": {
     "test": "make test",
     "start": "node ./server.js"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "license": "MIT License"
 }

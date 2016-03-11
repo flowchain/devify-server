@@ -4,12 +4,8 @@ var server = require('devify-server').coapBroker;
 var email = require('./utilities/email');
 
 // Sendgrid credentials.
-var credentials = {
-	user: process.env.SMTP_USERNAME || 'jollen',
-	password: process.env.SMTP_PASSWORD || '972c5ebe5758e0a95482ced3bf09f85c',
-	host: process.env.SMTP_HOST || 'smtp.sendgrid.net',
-	ssl: true
-};
+var fs = require('fs');
+var credentials = JSON.parse(fs.readFileSync(__dirname + '/config.json'));
 
 // Last time we have sent an email.
 var last = 0;
