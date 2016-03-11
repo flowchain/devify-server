@@ -13,6 +13,8 @@ This project shows how to extend devify-server biolerplate to send an alert SMS.
 
 ## Prerequisites
 
+0. Understanding [101-air-quality-sensor-console-print](../101-air-quality-sensor-console-print)
+
 1. This project uses twilio APIs for text messaging. Please signup and get your own credentials at [twilio](https://www.twilio.com).
 
 2. This project uses [twilio](https://www.npmjs.com/package/twilio) npm module to invoke twilio REST APIs. Please run `$ npm install twilio` to install the latest version.
@@ -22,7 +24,7 @@ This project shows how to extend devify-server biolerplate to send an alert SMS.
 Twilio credentials consists of Sid and Token. Please replace ```<YOUR-SID>``` with your sid gave by twilio, and replace ```<YOUR-TOKEN>``` with your token.
 
 ```
-var server = require('./coap-broker');
+var server = require('devify-server').coapBroker;
 
 // Twilio Credentials 
 var accountSid = '<YOUR-SID>'; 
@@ -55,6 +57,8 @@ server.start({
 
 ## NodeMCU
 
+The full source list is as the following.
+
 ```
 -- Configure the ESP as a station (client)
 wifi.setmode(wifi.STATION)  
@@ -79,3 +83,5 @@ tmr.alarm(0, 8000, 1, function()
     print(buf)
 end)
 ```
+
+The work of modifying the code is just the same with the chapter [101-air-quality-sensor-console-print](../101-air-quality-sensor-console-print).
