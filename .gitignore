@@ -38,4 +38,4 @@ node_modules
 components/configs/*/*.conf
 
 # Config files
-config.json
+config.*.json
