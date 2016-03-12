@@ -39,7 +39,8 @@ var WoT = require('wotcity.io');
 var Framework = WoT.Framework
   , WebsocketBroker = WoT.WebsocketBroker
   , WebsocketRouter = WoT.WebsocketRouter
-  , RequestHandlers = WoT.WebsocketRequestHandlers;
+  , RequestHandlers = WoT.WebsocketRequestHandlers
+  , Runtime = WoT.Runtime;
 
 /**
  * Util Modules
@@ -100,7 +101,11 @@ Server.prototype.onData = function(payload) {
  */
 function createServer(options) {
   var instance = new Server();
-  instance._options = options;
+
+  // Create FBP Runtime
+  var network = new Runtime();
+  instance._network = network;
+
   return merge(instance, options);
 }
 
@@ -120,6 +125,12 @@ Server.prototype.start = function(options) {
         && typeof(this._options[prop]) === 'undefined')
       this._options[prop] = options[prop];
   }
+
+  // Load components
+  this._network.load(this._options.components || {});
+
+  // Start FBP Network Runtime
+  this._network.runtime(this._options.graph || {});
 
   var server = new WebsocketBroker({
     port: port,
