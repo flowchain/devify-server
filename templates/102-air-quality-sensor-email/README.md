@@ -11,7 +11,7 @@ The use scenario of this project.
 * Send an alert message by email when the air quality is not good
 * Lean how to invoke SendGrid APIs
 
-This project shows how to extend devify-server biolerplate to send an alert SMS. Please read [Devify](https://github.com/DevifyPlatform/devify-server/blob/master/README.md) to understand Devify in a bit before continue to this project.
+This project shows how to extend devify-server biolerplate to send an email. Please read [Devify](https://github.com/DevifyPlatform/devify-server/blob/master/README.md) to understand Devify in a bit before continue to this project.
 
 ## Prerequisites
 
