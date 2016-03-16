@@ -32,8 +32,8 @@ var onmessage = function(message) {
     // Put to DropBox
     var filename = new Date() + '.json';
 
-    if (data.length >= 5) {
-		client.put('esp8266/' + filename, JSON.stringify(data), function(status, reply) {
+    if (data.length >= 10) {
+		client.put(filename, JSON.stringify(data), function(status, reply) {
 		    console.log('DBOX Status: ' + status);
 		    data = [];
 		});
