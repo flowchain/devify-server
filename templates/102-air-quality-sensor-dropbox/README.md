@@ -15,7 +15,7 @@ This project shows how to extend devify-server biolerplate to save data to Dropb
 
 ## Prerequisites
 
-The guidelines are the same with the previous lessons. Therefore, this lessons will be explained in a short. Please read the previous 3 lessons before using this project. 
+The guidelines are the same with the previous lessons. Therefore, this lesson will be explained in a short. Please read the previous 3 lessons before starting the project of this lesson. 
 
 * [101-air-quality-sensor-console-print](../101-air-quality-sensor-console-print)
 * [101-air-quality-sensor-text-messaging-twilio](../101-air-quality-sensor-text-messaging-twilio)
@@ -31,8 +31,6 @@ The guidelines are the same with the previous lessons. Therefore, this lessons w
 
 4. Please modify ```config.app.json``` and ```config.access_token.json``` to fill with your Dropbox token and secret key.
 
-It's time to go to Level 2.
-
 ## Next
 
-* To be continued.
+* To be continued. (It's time to go to Level 2)
