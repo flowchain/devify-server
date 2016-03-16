@@ -15,11 +15,9 @@ This project shows how to extend devify-server biolerplate to save data to Dropb
 
 ## Prerequisites
 
-The guidelines are the same with the previous lessons. Therefore, this lessons will be explained in a short.
+The guidelines are the same with the previous lessons. Therefore, this lessons will be explained in a short. Please read the previous 3 lessons before using this project. 
 
-Please understanding the previous 3 projects before using this project. 
-
-* [101-air-quality-sensor-console-print](101-air-quality-sensor-console-print)
+* [101-air-quality-sensor-console-print](../101-air-quality-sensor-console-print)
 * [101-air-quality-sensor-text-messaging-twilio](../101-air-quality-sensor-text-messaging-twilio)
 * [102-air-quality-sensor-email](../102-air-quality-sensor-email)
 
