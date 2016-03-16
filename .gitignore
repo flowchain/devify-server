@@ -39,3 +39,5 @@ components/configs/*/*.conf
 
 # Config files
 config.*.json
+config.json
+config*json
