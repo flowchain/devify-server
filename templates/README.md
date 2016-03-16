@@ -19,9 +19,6 @@ ESP8266 over the Web: Getting started with IoT System Architecture
 
 There are several lessons from level 101 to level 202.
 
-* [101-air-quality-sensor-console-print](101-air-quality-sensor-console-print) (Please start reading here)
-* [101-air-quality-sensor-text-messaging-twilio](101-air-quality-sensor-text-messaging-twilio)
-* [102-air-quality-sensor-email](102-air-quality-sensor-email)
-* To be continued.
+* Get started from [101-air-quality-sensor-console-print](101-air-quality-sensor-console-print)
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
