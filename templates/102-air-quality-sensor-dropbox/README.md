@@ -13,9 +13,17 @@ The use scenario of this project.
 
 This project shows how to extend devify-server biolerplate to save data to Dropbox files. Please read [Devify](https://github.com/DevifyPlatform/devify-server/blob/master/README.md) to understand Devify in a bit before continue to this project.
 
-## Quickstart
+## Prerequisites
 
-The steps are the same with the previous 3 project. I will explain this project in a short.
+The guidelines are the same with the previous lessons. Therefore, this lessons will be explained in a short.
+
+Please understanding the previous 3 projects before using this project. 
+
+* [101-air-quality-sensor-console-print](101-air-quality-sensor-console-print)
+* [101-air-quality-sensor-text-messaging-twilio](../101-air-quality-sensor-text-messaging-twilio)
+* [102-air-quality-sensor-email](../102-air-quality-sensor-email)
+
+## Quickstart
 
 1. This project uses Dropbox APIs. Please signup and get your own application key at [Dropbox](https://dropbox.com/).
 
