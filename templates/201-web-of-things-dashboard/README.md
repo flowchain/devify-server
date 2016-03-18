@@ -26,8 +26,11 @@ In a star network, every node is connected to Gateway Sensor Node. A node in a s
 
 ## Goal and Architecture
 
+![](https://cloud.githubusercontent.com/assets/1126021/13871103/b0f09960-ed1c-11e5-810b-33f4aa8f0e70.png)
 
-In the figure:
+Figure-3: Goal of 201-web-of-things-dashboard
+
+Figure-3 is a simple Web of Things architecture. In the figure:
 
 * We will call Gateway Sensor Node as "Proxy"
 * We will take advantge of ESP8266 as "Temperature Node"
