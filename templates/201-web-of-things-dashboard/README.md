@@ -8,7 +8,7 @@ The Web of Things (WoT) provides an Application Layer that simplifies the creati
 
 This project aims to architect the Web of Things for wireless sensor networks.
 
-![](http://i.imgur.com/Kf6ffEO.gif)
+![](https://cloud.githubusercontent.com/assets/1126021/13872864/54542382-ed28-11e5-8d11-5c4d1c62f239.gif)
 
 ## Abstraction
 
