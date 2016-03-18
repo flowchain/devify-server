@@ -35,7 +35,7 @@ Figure-3: Goal of 201-web-of-things-dashboard
 Figure-3 is a simple Web of Things architecture. In the figure:
 
 * We will call Gateway Sensor Node as "Proxy"
-* We will take advantge of ESP8266 as "Temperature Node", mark as "Node" in Figure-3
+* We will take advantge of ESP8266 as "Temperature Node", marked as "Node" in Figure-3
 * Temperature Node will gather temperature information and send it to Proxy over "CoAP"
 * We will connect Proxy to an IoT cloud server, the IoT cloud server is called "Endpoint"
 * We will deploy "Endpoint" at Microsoft Azure through App Service
@@ -46,6 +46,8 @@ Some technical details:
 * "Temperature Node" sends temperature information to "Proxy" over CoAP
 * "Proxy" is real-time pushing temperature information to "Endpoint" over Websockets
 * "Endpoint" is real-time pushing temperature information to "Dashboard" over Websockets
+
+We will implement "Endpoint", "Proxy", "Node" and "Dashboard" in sequence.
 
 ## Setup "Endpoint"
 
