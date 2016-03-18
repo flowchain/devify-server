@@ -1,6 +1,6 @@
 ![](http://res.cloudinary.com/jollen/image/upload/h_110/v1455862763/devify-logo_rh63vl.png)
 
-ESP8266 over the Web: Getting started with IoT System Architecture
+The simplest toturial to build a real-time 
 
 ## Project Goal
 
@@ -69,6 +69,10 @@ The project structre is as the following.
 
 We will deploy this project to Azure App Service. Azure App Service will run ```server.js``` automatically after we finish deploying our project.
 
+If may need to visit [Microsoft Azure](https://azure.microsoft.com/) if you want to know more about Microsoft Azure, or you have to sign up a new Azure account.
+
+It's suggested that you read [App Service](https://azure.microsoft.com/en-us/services/app-service/) first when first time to use App Service of Microsoft Azure.
+
 ### Step 1: Install azure-cli
 
 ```
@@ -94,7 +98,8 @@ Input your site information at the prompt model. This is an example:
 $ azure site create --git
 info:    Executing command site create
 help:    Need a site name
-Name: devify-temperature 
+Name: devify-temperature
++ Getting locations                                                            
 + Getting sites                                                                
 + Getting locations                                                            
 help:    Choose a location
@@ -113,18 +118,29 @@ help:    Choose a location
   13) Brazil South
   : 7
 info:    Creating a new web site at devify-temperature.azurewebsites.net
-/info:    Created website at devify-temperature.azurewebsites.net              
+-info:    Created website at devify-temperature.azurewebsites.net              
 +
+info:    Executing `git init`
+info:    Creating default iisnode.yml file
+info:    Initializing remote Azure repository
++ Updating site information                                                    
+info:    Remote azure repository initialized
++ Getting site information                                                     
++ Getting user information                                                     
+info:    Executing `git remote add azure https://jollen@devify-temperature.scm.azurewebsites.net/devify-temperature.git`
+info:    A new remote, 'azure', has been added to your local git repository
+info:    Use git locally to make changes to your site, commit, and then use 'git push azure master' to deploy to Azure
 info:    site create command OK
+
 ```
 
-Please append ```--git``` option at this command line. This option could make Azure CLI to add the remote git of our new created site to local project. We will use ```git``` to deploy our site.
+Please append ```--git``` option to the command line. This option could make Azure CLI to add the remote git of our new created site to local project. We will use ```git``` to deploy our site.
 
 ### Step 3: Get Endpoint
 
-After finishing creating site, remember the DNS endpoint name of your site. Please looking for the ```Created website at``` message line to get your endpoint name.
+After finishing creating site, remember the name of your site. Please looking for the ```Created website at``` message line to get your endpoint name.
 
-the endpoint name is ```devify-temperature.azurewebsites.net``` in this example.
+The endpoint name is ```devify-temperature.azurewebsites.net``` in this example.
 
 ### Step 4: Create Site Credentials
 
@@ -152,23 +168,28 @@ Use ```git``` to commit and push your project files to web site:
 
 ```
 $ git add --all
-$ git commit -m 'first commit'
+$ git commit -m 'deploy to azure'
 $ git push azure master
 ```
 
-The example output:
+The is an example:
 
 ```
-Username for 'https://devify-temperature.scm.azurewebsites.net': jollen
+$ git add --all
+$ git commit -m 'deploy to azure'
+$ git push azure master
 Password for 'https://jollen@devify-temperature.scm.azurewebsites.net': 
-Counting objects: 7, done.
+fatal: Authentication failed for 'https://jollen@devify-temperature.scm.azurewebsites.net/devify-temperature.git/'
+Moko365de-iMac:201-web-of-things-dashboard apple$ git push azure master
+Password for 'https://jollen@devify-temperature.scm.azurewebsites.net': 
+Counting objects: 10, done.
 Delta compression using up to 2 threads.
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (7/7), 3.93 KiB | 0 bytes/s, done.
-Total 7 (delta 0), reused 0 (delta 0)
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 5.16 KiB | 0 bytes/s, done.
+Total 10 (delta 1), reused 0 (delta 0)
 remote: Updating branch 'master'.
 remote: Updating submodules.
-remote: Preparing deployment for commit id '50707cad8d'.
+remote: Preparing deployment for commit id '0f244b55bf'.
 remote: Generating deployment script.
 remote: Generating deployment script for node.js Web Site
 remote: Generated deployment script files
@@ -176,19 +197,19 @@ remote: Running deployment command...
 remote: Handling node.js deployment.
 remote: KuduSync.NET from: 'D:\home\site\repository' to: 'D:\home\site\wwwroot'
 remote: Deleting file: 'hostingstart.html'
+remote: Copying file: '.gitignore'
+remote: Copying file: 'iisnode.yml'
 remote: Copying file: 'package.json'
 remote: Copying file: 'README.md'
 remote: Copying file: 'server.js'
-remote: Copying file: 'esp8266\coap-air-quality.lua'
+remote: Copying file: 'server.proxy.js'
+remote: Copying file: 'esp8266\coap-temperature.lua'
 remote: Using start-up script server.js from package.json.
 remote: Generated web.config.
 remote: The package.json file does not specify node.js engine version constraints.
 remote: The node.js application will run with the default node.js version 4.2.3.
 remote: Selected npm version 3.5.1
-remote: .................................
-.
-.
-.
+remote: ....
 ```
 
 ### Step 5: Enable Websockets
