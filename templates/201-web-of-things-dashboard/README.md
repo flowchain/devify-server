@@ -4,6 +4,8 @@ The simplest tutorial to build the Web of Things architecture - with ESP8266 and
 
 ## Project Goal
 
+Real-time Sensor Network Dashboard: Get Started with WebSocks, CoAP and Web of Things
+
 The Web of Things (WoT) provides an Application Layer that simplifies the creation of Internet of Things applications[1]. WoT reuses existing web technologies, such REST, HTTP, Websockets, CoAP and etc. [1].
 
 This project aims to architect the Web of Things for wireless sensor networks.
