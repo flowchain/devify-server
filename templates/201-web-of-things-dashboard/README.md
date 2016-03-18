@@ -1,6 +1,6 @@
 ![](http://res.cloudinary.com/jollen/image/upload/h_110/v1455862763/devify-logo_rh63vl.png)
 
-The simplest toturial to build a real-time 
+The simplest tutorial to build the Web of Things architecture - with ESP8266 and Microsoft Azure
 
 ## Project Goal
 
