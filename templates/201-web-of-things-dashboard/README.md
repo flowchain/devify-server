@@ -38,7 +38,27 @@ In the figure:
 
 ## Setup "Endpoint"
 
-The following steps show that how to deploy this project to Azure web service.
+The following steps show that how to deploy "Endpoint" to Azure web service.
+
+Please change your working directory to this project.
+
+```
+$ cd <your-path>/devify-server/templates/201-web-of-things-dashboard
+```
+
+The project structre is as the following.
+
+```
+.
+├── README.md *This file*
+├── esp8266
+│   └── coap-temperature.lua *The sample code of "Temperature Node"*
+├── package.json
+├── server.js *The sample code of "Endpoint"*
+└── server.proxy.js *The sample code of "Proxy"*
+```
+
+We will deploy this project to Azure App Service. Azure App Service will run ```server.js``` automatically after we finish deploying our project.
 
 ### Step 1: Install azure-cli
 
@@ -57,9 +77,8 @@ azure login
 Then use the command line to create an Aure site:
 
 ```
-azure site create
+azure site create --git
 ```
-
 Input your site information at the prompt model. This is an example:
 
 ```
@@ -89,6 +108,9 @@ info:    Creating a new web site at devify-temperature.azurewebsites.net
 +
 info:    site create command OK
 ```
+
+Please append ```--git``` option at this command line. This option could make Azure CLI to add the remote git of our new created site to local project. We will use ```git``` to deploy our site.
+
 ### Step 3: Get Endpoint
 
 After finishing creating site, remember the DNS endpoint name of your site. Please looking for the ```Created website at``` message line to get your endpoint name.
@@ -165,7 +187,7 @@ remote: .................................
 To enable web sockets:
 
 ```
-$ azure site set -w
+azure site set -w
 ```
 
 This is an example:
@@ -183,7 +205,7 @@ Web site slot [enter for none]:
 The simplest way to run "Proxy" is to use the laptop. 
 
 ```
-$ cd <your-path>/devify-server/templates/201-web-of-things
+$ cd <your-path>/devify-server/templates/201-web-of-things-dashboard
 $ npm install
 $ export ENDPOINT=devify-temperature.azurewebsites.net
 $ export HOST=192.168.1.100
