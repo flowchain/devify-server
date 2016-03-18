@@ -24,7 +24,7 @@ One of the simple topologies of the wireless network network is Star Network[3].
 
 Figure-2: Star Network (Source: https://en.wikipedia.org/wiki/Star_network. License: CC BY-SA 3.0)
 
-In a star network, every node is connected to Gateway Sensor Node. A node in a star network will gather sensory information and send it the Gateway Sensor Node. We will use star network to architect the Web of Things for this project.
+In a star network, every node is connected to Gateway Sensor Node. A node in a star network will gather sensory information and send it to Gateway Sensor Node. We will use star network to architect the Web of Things in this project.
 
 ## Goal and Architecture
 
