@@ -8,6 +8,8 @@ The Web of Things (WoT) provides an Application Layer that simplifies the creati
 
 This project aims to architect the Web of Things for wireless sensor networks.
 
+![](http://i.imgur.com/Kf6ffEO.gif)
+
 ## Abstraction
 
 The wireless sensor network is built from "nodes"[2]. A node in a sensor network is capable of gathering information and communicating with other nodes.
@@ -210,6 +212,13 @@ remote: The package.json file does not specify node.js engine version constraint
 remote: The node.js application will run with the default node.js version 4.2.3.
 remote: Selected npm version 3.5.1
 remote: ....
+.
+.
+remote: Finished successfully.
+remote: Running post deployment command(s)...
+remote: Deployment successful.
+To https://jollen@devify-temperature.scm.azurewebsites.net/devify-temperature.git
+ * [new branch]      master -> master
 ```
 
 ### Step 5: Enable Websockets
