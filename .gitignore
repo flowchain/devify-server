@@ -41,3 +41,8 @@ components/configs/*/*.conf
 config.*.json
 config.json
 config*json
+
+# Templates
+templates/*/.git
+templates/*/.gitignore
+templates/*/iisnode.yml
