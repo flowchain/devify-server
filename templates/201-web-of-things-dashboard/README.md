@@ -96,7 +96,7 @@ Then use the command line to create an Aure site:
 ```
 azure site create --git
 ```
-Input your site information at the prompt model. This is an example:
+Input your site information at the prompt mode. This is an example:
 
 ```
 $ azure site create --git
