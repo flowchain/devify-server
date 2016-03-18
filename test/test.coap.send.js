@@ -10,7 +10,7 @@ var sendNumber = function() {
     console.log('Pushing: ' + data);
     clientWriable.end(new Buffer(data));
 
-    setTimeout(sendNumber, 150);
+    process.exit(0);
 };
 
 sendNumber();
