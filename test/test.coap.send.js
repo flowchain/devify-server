@@ -8,10 +8,9 @@ var sendNumber = function() {
 
     console.log('Pushing: ' + data);
 
-    var clientWriable = coap.request('coap://192.168.1.100:8000/object/5550937980d51931b3000009/send');
+    var clientWriable = coap.request('coap://localhost:8000/object/5550937980d51931b3000009/send');
     clientWriable.end(new Buffer(data));
 };
 
 sendNumber();
-
 process.exit(0);
