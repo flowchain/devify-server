@@ -50,12 +50,12 @@ The project structre is as the following.
 
 ```
 .
-├── README.md *This file*
+├── README.md
 ├── esp8266
-│   └── coap-temperature.lua *The sample code of "Temperature Node"*
+│   └── coap-temperature.lua  The sample code of "Temperature Node"
 ├── package.json
-├── server.js *The sample code of "Endpoint"*
-└── server.proxy.js *The sample code of "Proxy"*
+├── server.js                 The sample code of "Endpoint"
+└── server.proxy.js           The sample code of "Proxy"
 ```
 
 We will deploy this project to Azure App Service. Azure App Service will run ```server.js``` automatically after we finish deploying our project.
@@ -237,7 +237,39 @@ The "Proxy" and "Node" should be connected to the same WiFi station.
 
 ## Setup "Dashboard"
 
+Please install Devify CLI to speed up setup "Dahsboard".
 
+```
+$ npm install devify-cli
+```
+
+Download a sample dashboard.
+
+```
+$ devify ui ui-moving-line
+```
+
+It will download [ui-moving-line](https://github.com/wotcity/ui-moving-line) repo, a simple web frontend of moving line chart.
+
+Change directory to ```ui-moving-line```, and start a web server to serve *ui-moving-line*.
+
+```
+$ cd ui-moving-line
+$ devify serve ./
+```
+Open your browser with ```http://localhost:3000/index.html#testman/wot.city/temperature```. You will immediately see a demo.
+
+The URL format is as ```index.html#<DeviceID>/<Endpoint>/<Y-Axis-Key>```. 
+
+* **<DeviceID>** is the device ID, please check it out with the URI in [coap-temperature.lua](esp8266/coap-temperature.lua)
+* **<Endpoint>** is the "Endpoint"
+* **<Y-Axis-Key>** is the key of the display value, please check it out with JSON output in [coap-temperature.lua](esp8266/coap-temperature.lua)
+
+This is an example:
+
+```
+index.html#5550937980d51931b3000009/devify-temperature.azurewebsites.net/temperature
+```
 
 [1]: https://en.wikipedia.org/wiki/Web_of_Things
 [2]: https://en.wikipedia.org/wiki/Wireless_sensor_network
