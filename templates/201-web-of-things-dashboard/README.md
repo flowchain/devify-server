@@ -75,7 +75,7 @@ We will deploy this project to Azure App Service. Azure App Service will run ```
 
 You may need to visit [Microsoft Azure](https://azure.microsoft.com/) if you want to know more about Microsoft Azure, or you have to sign up a new Azure account.
 
-It's suggested that you read [App Service](https://azure.microsoft.com/en-us/services/app-service/) first when first time to use App Service of Microsoft Azure.
+It's suggested that you read [App Service](https://azure.microsoft.com/en-us/services/app-service/) if it's the first time to use App Service of Microsoft Azure.
 
 ### Step 1: Install azure-cli
 
