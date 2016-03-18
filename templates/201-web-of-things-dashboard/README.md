@@ -73,7 +73,7 @@ The project structre is as the following.
 
 We will deploy this project to Azure App Service. Azure App Service will run ```server.js``` automatically after we finish deploying our project.
 
-If may need to visit [Microsoft Azure](https://azure.microsoft.com/) if you want to know more about Microsoft Azure, or you have to sign up a new Azure account.
+You may need to visit [Microsoft Azure](https://azure.microsoft.com/) if you want to know more about Microsoft Azure, or you have to sign up a new Azure account.
 
 It's suggested that you read [App Service](https://azure.microsoft.com/en-us/services/app-service/) first when first time to use App Service of Microsoft Azure.
 
