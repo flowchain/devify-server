@@ -304,9 +304,9 @@ Open your browser with ```http://localhost:3000/index.html#testman/wot.city/temp
 
 The URL format is as ```index.html#<DeviceID>/<Endpoint>/<Y-Axis-Key>```. 
 
-* **<DeviceID>** is the device ID, please check it out with the URI in [coap-temperature.lua](esp8266/coap-temperature.lua)
-* **<Endpoint>** is the "Endpoint"
-* **<Y-Axis-Key>** is the key of the display value, please check it out with JSON output in [coap-temperature.lua](esp8266/coap-temperature.lua)
+* **&lt;DeviceID&gt;** is the device ID, please check it out with the URI in [coap-temperature.lua](esp8266/coap-temperature.lua)
+* **&lt;Endpoint&gt;** is the "Endpoint"
+* **&lt;Y-Axis-Key&gt;** is the key of the display value, please check it out with JSON output in [coap-temperature.lua](esp8266/coap-temperature.lua)
 
 This is an example:
 
