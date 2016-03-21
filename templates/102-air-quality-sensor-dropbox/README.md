@@ -33,4 +33,4 @@ The guidelines are the same with the previous lessons. Therefore, this lesson wi
 
 ## Next
 
-* To be continued. (It's time to go to Level 2)
+* [201: Building Real-Time Dahsboard](../201-web-of-things-dashboard/)
