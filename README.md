@@ -104,9 +104,11 @@ end)
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://deploy.azure.com/?repository=https://github.com/DevifyPlatform/devify-server)
 
-Before going to use *devify-server* and start to develop your own IoT server. You may want to have a try. By click the ***Deploy to Azure** button, it only takes couple minutes to have *devify-server* deploied at Microsoftt Azure web service.
+Before starting to develop your own IoT server. You may want to have a try. By click the **Deploy to Azure** button, it takes couple minutes to have *devify-server* deploied at Microsoftt Azure web service. The following instructions show how to deploy devify-server and have a try, by using test scripts.
 
-* Please click above button for one click to azure. Be sure to [Enable Web Sockets](https://azure.microsoft.com/zh-tw/blog/introduction-to-websockets-on-windows-azure-web-sites/) after deploying your web site.
+* Please click above button to deploy this project.
+
+* Be sure to [Enable Web Sockets](https://azure.microsoft.com/zh-tw/blog/introduction-to-websockets-on-windows-azure-web-sites/) after deploy.azure.com has finished deploying this project.
 
  * Go to the [Windows Azure Management Console](https://portal.azure.com/)
  * Select **App Services**
