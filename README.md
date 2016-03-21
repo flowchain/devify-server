@@ -100,15 +100,11 @@ tmr.alarm(0, 1000, 1, function()
 end)
 ```
 
-## Developer
+## Developer Quickstart
 
-There are several IoT server templates with different use scenraio. Please go to the ebook [ESP8266 over the Web: Getting started with IoT System Architecture](templates/).
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://deploy.azure.com/?repository=https://github.com/DevifyPlatform/devify-server)
 
-## Deploy to Azure
-
-<a title="Deploy to Azure" href="https://deploy.azure.com/?repository=https://github.com/DevifyPlatform/devify-server" target="_blank"><img src="https://cloud.githubusercontent.com/assets/1126021/13560959/4e687ede-e461-11e5-83de-448bdf116e99.png"></a>
-
-Before start to use *devify-server* and continue to develop your own. You can have the first experience of *devify-server* by deploying this basic *devify-server* boilerplate to Azure.
+Before going to use *devify-server* and start to develop your own IoT server. You may want to have a try. By click the ***Deploy to Azure** button, it only takes couple minutes to have *devify-server* deploied at Microsoftt Azure web service.
 
 * Please click above button for one click to azure. Be sure to [Enable Web Sockets](https://azure.microsoft.com/zh-tw/blog/introduction-to-websockets-on-windows-azure-web-sites/) after deploying your web site.
 
@@ -132,6 +128,10 @@ Before start to use *devify-server* and continue to develop your own. You can ha
  * Modify this line: ```client.connect('ws://localhost:8000/object/5550937980d51931b3000009/send', '');``` to meet your web site URL. For the example above ```client.connect('ws://devify-server88de.azurewebsites.net/object/5550937980d51931b3000009/send', '');```
  * The Devify framework will generate a URI for sending the received messages, use ```ws://devify-server88de.azurewebsites.net/object/5550937980d51931b3000009/viewer``` to receive real-time messages from the server.
  * The string ```5550937980d51931b3000009``` is the device ID. You can modify it and give a favor string.
+
+## Developer Get Started
+
+There are several IoT server templates with different use scenraio. Please go to the ebook [ESP8266 over the Web: Getting started with IoT System Architecture](templates/).
 
 ## Contribution
 
