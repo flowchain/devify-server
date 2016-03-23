@@ -104,7 +104,7 @@ end)
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://deploy.azure.com/?repository=https://github.com/DevifyPlatform/devify-server)
 
-Before starting to develop your own IoT server. You may want to have a try. By click the **Deploy to Azure** button, it takes couple minutes to have *devify-server* deploied at Microsoftt Azure web service. The following instructions show how to deploy devify-server and have a try, by using test scripts.
+Before starting to develop your own IoT server. You may want to have a try. By click the **Deploy to Azure** button, it takes couple minutes to have *devify-server* deployed at Microsoftt Azure web service. The following instructions show how to deploy devify-server and have a try, by using test scripts.
 
 * Please click above button to deploy this project.
 
