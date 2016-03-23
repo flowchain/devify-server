@@ -100,6 +100,8 @@ tmr.alarm(0, 1000, 1, function()
 end)
 ```
 
+The ```esp8266-coap-server.js ``` server will **not** print messages on the console. Please read [101-air-quality-sensor-console-print](https://github.com/DevifyPlatform/devify-server/tree/master/templates/101-air-quality-sensor-console-print) project template to extend ```esp8266-coap-server.js ``` server for printing messages on the console when there is data from IoT Device.
+
 ## Developer Quickstart
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://deploy.azure.com/?repository=https://github.com/DevifyPlatform/devify-server)
