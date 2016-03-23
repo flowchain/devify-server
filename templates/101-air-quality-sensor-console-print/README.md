@@ -15,7 +15,7 @@ The use scenario of this project.
 
 1. [Node.js](https://nodejs.org). Note: Node should be with a version above 4.3
 2. ESP8266 or NodeMCU development kit
-3. Air quality sensor or any other analog in sensors
+3. An air quality sensor or other sensors which is the type of analog in
 
 ![](https://cloud.githubusercontent.com/assets/1126021/13700095/beb9fa90-e7b9-11e5-8f61-a729ce3e1016.JPG)
 
