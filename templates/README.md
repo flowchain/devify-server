@@ -6,7 +6,11 @@
 [![Build Status](https://travis-ci.org/DevifyPlatform/devify-server.svg?branch=master)](https://travis-ci.org/DevifyPlatform/devify-server)
 [![GitHub license](https://img.shields.io/github/license/DevifyPlatform/devify-server.svg)](https://github.com/DevifyPlatform/devify-server)
 
-A little book for beginners to get started with IoT cloud servers. This little book is an side project of [*devify-server*](https://github.com/DevifyPlatform/devify-server) open source project which is a simple IoT server boilerplate. There are five templates (with one chapter for each template) developed by this book to introduce the usage of *devify-server* open source project.
+A little book for beginners to get started with IoT cloud servers. This little book is a side project of [*devify-server*](https://github.com/DevifyPlatform/devify-server) which is a simple IoT server boilerplate.
+
+**Devify** is extremely light weight, and is very easy to use. It aims to help developers to create IoT application servers, faster.
+
+There are five templates (with one chapter for each template) developed by this book to introduce the usage of *devify-server* open source project.
 
 ## Who should read
 
