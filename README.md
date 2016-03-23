@@ -104,7 +104,7 @@ end)
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://deploy.azure.com/?repository=https://github.com/DevifyPlatform/devify-server)
 
-Before starting to develop your own IoT server. You may want to have a try. By click the **Deploy to Azure** button, it takes couple minutes to have *devify-server* deployed at Microsoftt Azure web service. The following instructions show how to deploy devify-server and have a try, by using test scripts.
+Before starting to develop your own IoT server. You may want to have a try. By click the **Deploy to Azure** button, it takes couple minutes to have *devify-server* deployed at Microsoftt Azure web service. The following instructions show how to deploy devify-server, and have a try by using test scripts.
 
 * Please click above button to deploy this project.
 
@@ -128,7 +128,7 @@ Before starting to develop your own IoT server. You may want to have a try. By c
 
  * Open *test/test.websocket.send.js* file
  * Modify this line: ```client.connect('ws://localhost:8000/object/5550937980d51931b3000009/send', '');``` to meet your web site URL. For the example above ```client.connect('ws://devify-server88de.azurewebsites.net/object/5550937980d51931b3000009/send', '');```
- * The Devify framework will generate a URI for sending the received messages, use ```ws://devify-server88de.azurewebsites.net/object/5550937980d51931b3000009/viewer``` to receive real-time messages from the server.
+ * The Devify framework will generate a URI for sending the received messages, use ```ws://devify-server88de.azurewebsites.net/object/5550937980d51931b3000009/viewer``` to receive real-time messages from the server. Please open *test/test.websocket.viewer.js*, and modify the URL string.
  * The string ```5550937980d51931b3000009``` is the device ID. You can modify it and give a favor string.
 
 ## Developer Get Started
