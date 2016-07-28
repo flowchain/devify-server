@@ -1,13 +1,17 @@
-var server = require('../libs/coap-broker');
+var server = require('./libs/coap-broker');
 
-var onmessage = function(message) {
-	var obj = JSON.parse(message.data);
+var onmessage = function(payload) {
+	var obj = JSON.parse(payload.data);
+	var paths = payload.pathname.split('/');
+	var deviceId = paths[2];
 
-	console.log('<DATA> ' + message.data);
+	console.log('[', deviceId, ']', payload.data);
 };
 
 var onnewthing = function(thing) {
 	var data = JSON.stringify(thing);
+
+	console.log('<NEW_THING> ' + data);	
 };
 
 server.start({
