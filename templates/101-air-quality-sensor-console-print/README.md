@@ -159,14 +159,17 @@ coap://127.0.0.1:8000/object/<ObjectID>/send
 
 This URI style is defined in the underlying of Devify framework.
 
-## Flow-Based Programming
+## Better IoT Programming
 
-**NOTE:** This is under development, and which is planned to be first released on June, 2016. Please refer to [devify-graph](https://github.com/DevifyPlatform/devify-graph) project later for flow-based IoT programming.
+Flowchain open source project for flow-based IoT programming is available at [Flowchain](https://github.com/flowchain/flowchain). 
 
-This chapter explains two different programming models. One is the monolithic application (aka single process) with conventional *if..else...* programming model. The other is the concept of resource-oriented using URI model.
+This chapter explains two different programming models. 
 
-However, both of these two programming models are not the vision of Devify project. The vision **A new way to write IoT application server code** is implemented by so-called flow-based programming (FBP).
+* One is the monolithic application (aka single process) with conventional *if..else...* programming model. 
+* The other is the concept of resource-oriented using URI model.
 
-## Next
+Flowchain opensource project brings the vision of **A new way to write IoT application server code**. For better IoT programming with flow-based paradigm, please read [Flowchain](https://github.com/flowchain/flowchain). 
+
+## Next Chapter
 
 * [101-air-quality-sensor-text-messaging-twilio](../101-air-quality-sensor-text-messaging-twilio)
