@@ -137,6 +137,10 @@ Before starting to develop your own IoT server. You may want to have a try. By c
 
 There are several IoT server templates with different use scenraio. Please go to the ebook [ESP8266 over the Web: Getting started with IoT System Architecture](templates/).
 
+## Better IoT Programming
+
+For better IoT programming with flow-based paradigm, please read [Flowchain](https://github.com/flowchain/flowchain).
+
 ## Contribution
 
 Devify is still under development. This project needs your help and contribution.
