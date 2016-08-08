@@ -147,4 +147,4 @@ Devify is still under development. This project needs your help and contribution
 
 ## License
 
-devify-server is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+devify-server is released under the [MIT License](http://www.opensource.org/licenses/MIT). See [LICENSE.md](LICENSE.md).

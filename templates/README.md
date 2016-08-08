@@ -27,4 +27,6 @@ The **NodeMCU over the Web** little book. A guide to setup **Devify Server** for
 * Chapter 4 -[102-air-quality-sensor-email](102-air-quality-sensor-email): Send an alert message by email when the air quality is not good
 * Chapter 5 -[201-web-of-things-dashboard](201-web-of-things-dashboard): An advanced chapter. Build a real-time sensor information dashboard. Get understood of WebSockets, CoAP and Web of Things (WoT).
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="CC BY 4.0" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
