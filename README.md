@@ -1,5 +1,5 @@
 ![](http://res.cloudinary.com/jollen/image/upload/h_110/v1455862763/devify-logo_rh63vl.png)
-
+es
 A new way to write IoT application server code.
 
 # devify-server
@@ -26,7 +26,7 @@ A cli tool [devify-cli](https://github.com/DevifyPlatform/devify-cli) is availab
 $ npm install -g devify-cli
 $ devify new <new_project_dir>
 $ cd <new_project_dir> && npm install
-$ node esp8266-coap-server.js 
+$ node coap-broker-server-events.js
 ```
 
 ## Tutorial
@@ -66,7 +66,7 @@ You need to export the host IP through ```HOST``` environment variable before st
 
 ```
 $ export HOST=192.168.0.100
-$ node esp8266-coap-server.js 
+$ node coap-broker-server-events.js
 WoT/CoAP server is listening at coap://192.168.0.100:8000
 ```
 The message shows that the server is listening at ```coap://192.168.0.100:8000```.
@@ -100,7 +100,7 @@ tmr.alarm(0, 1000, 1, function()
 end)
 ```
 
-The ```esp8266-coap-server.js ``` server will **not** print messages on the console. Please read [101-air-quality-sensor-console-print](https://github.com/DevifyPlatform/devify-server/tree/master/templates/101-air-quality-sensor-console-print) project template to extend ```esp8266-coap-server.js ``` server for printing messages on the console when there is data from IoT Device.
+The sample ```coap-broker-server-events.js``` will print messages from IoT devices on the console. Please read [101-air-quality-sensor-console-print](https://github.com/DevifyPlatform/devify-server/tree/master/templates/101-air-quality-sensor-console-print) for getting started.
 
 ## Developer Quickstart
 
