@@ -90,6 +90,7 @@ $ npm install azure-cli -g
 You must login to Azure in advance:
 
 ```
+azure config mode asm
 azure login
 ```
 
