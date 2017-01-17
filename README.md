@@ -143,17 +143,16 @@ Before starting to develop your own IoT server. You may want to have a try. By c
  * The Devify framework will generate a URI for sending the received messages, use ```ws://devify-server88de.azurewebsites.net/object/5550937980d51931b3000009/viewer``` to receive real-time messages from the server. Please open *test/test.websocket.viewer.js*, and modify the URL string.
  * The string ```5550937980d51931b3000009``` is the device ID. You can modify it and give a favor string.
 
-## Developer Get Started
+## Biolerplates
 
-There are several IoT server templates with different use scenraio. Please go to the ebook [ESP8266 over the Web: Getting started with IoT System Architecture](templates/).
 
-## Better IoT Programming
+Currently, the Devify provices 5 templates to introduce the usage of *devify-server* open source project.
 
-For better IoT programming with flow-based paradigm, please read [Flowchain](https://github.com/flowchain/flowchain).
-
-## Contribution
-
-Devify is still under development. This project needs your help and contribution.
+* Chapter 1 - [101-air-quality-sensor-console-print](templates/101-air-quality-sensor-console-print): Connected an air quality sensor to NodeMCU and send data to an IoT server locally (in local area network).
+* Chapter 2 -[101-air-quality-sensor-text-messaging-twilio](templates/101-air-quality-sensor-text-messaging-twilio): Send an alert message by SMS when the air quality is not good
+* Chapter 3 -[102-air-quality-sensor-dropbox](templates/102-air-quality-sensor-dropbox): Save hardware data to Dropbox files
+* Chapter 4 -[102-air-quality-sensor-email](templates/102-air-quality-sensor-email): Send an alert message by email when the air quality is not good
+* Chapter 5 -[201-web-of-things-dashboard](templates/201-web-of-things-dashboard): An advanced chapter. Build a real-time sensor information dashboard. Get understood of WebSockets, CoAP and Web of Things (WoT).
 
 ## License
 
