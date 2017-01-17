@@ -33,7 +33,7 @@ This section introduces the steps to write a CoAP device server to collaborate w
 
 The following instructions show how to connect NodeMCU to your localhost (PC/Notebook) and send ADC data to localhost  over CoAP.
 
-### 1. Get *devify-cli*
+### Step 1. Get *devify-cli*
 
 ```
 $ npm install -g devify-cli 
@@ -41,7 +41,7 @@ $ npm install -g devify-cli
 
 *devify-cli* a cli app aimed to get you speed up.
 
-### 2. Create a new project
+### Step 2. Create a new project
 
 ```
 $ devify esp_air_iot
@@ -50,7 +50,7 @@ Create a new *Devify* project by *devify-cli*. *Devify-cli* will automatically c
 
 Please make sure that *git* was installed at your host.
 
-### 3. Install dependencies
+### Step 3. Install dependencies
 
 ```
 $ cd esp_air_iot && npm install
@@ -58,7 +58,7 @@ $ cd esp_air_iot && npm install
 
 *Devify* project template is an isomorphic JavaScript app using Node.js. Please run ```npm install``` to get Node.js modules installed.
 
-### 4. Start the server
+### Step 4. Start the server
 
 You need to export the host IP through ```HOST``` environment variable before starting the CoAP server. 
 
@@ -69,7 +69,7 @@ WoT/CoAP server is listening at coap://192.168.0.100:8000
 ```
 The message shows that the server is listening at ```coap://192.168.0.100:8000```.
 
-### 5. Programing IoT device
+### Step 5. Programing IoT device
 
 The simplest way to send sensor data to IoT server via CoAP is using NodeMCU and Lua programming language.
 
@@ -102,9 +102,7 @@ The sample ```coap-broker-server-events.js``` will print messages from IoT devic
 
 ### Step 6. Deploy
 
-A Devify application server might be installed and run on an application processor-based high-performance device or a microcontroller device. Typically, the Node.js JavaScript runtime is used for high-performance devices, a JavaScript engines, such as the Mongoose full-stack IoT platform [3] and JerryScript [4] are used for microcontroller-based resource-constrained devices.
-
-The following section introduces how to install a Devify application server on Azure, the cloud-based server.
+A Devify application server might be installed and run on a cloud-based server, an application processor-based high-performance device or a microcontroller device. The following section introduces how to install a Devify application server on Azure, the cloud-based server.
 
 ## Deploy: Cloud-Based Server
 
