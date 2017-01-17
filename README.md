@@ -14,11 +14,11 @@ A fast way to write IoT application server code running on devices.
 
 ## What's a Devify ?
 
-Devify is a sub-project of [WoT.City](https://wotcity.com/WoTCity-WhitePaper.pdf) software framework that it proposes a new design software architecture for the development of interoperable Internet of Things (IoT) application server on IoT devices. To begin creating and developing customized such IoT application servers, the Devify provides several boilerplates (project templates) can be used immediately.
+Devify is a sub-project of [WoT.City](https://wotcity.com/WoTCity-WhitePaper.pdf) software framework that it proposes a new design software architecture for the development of interoperable Internet of Things (IoT) application server on IoT devices. To begin creating and developing customized such IoT application servers, the Devify provides several boilerplates (project templates) that can be used instantly.
 
 ## Introduction
 
-Devify is an open source project to develop a set of boilerplates for getting started with IoT device servers. It aims to help you developing device server running on IoT devices and using emerging web technologies. 
+Devify is an open source project to develop a set of boilerplates for getting started with interoperable IoT device servers. It aims to help you developing device server running on IoT devices and using emerging web technologies. 
 
 ## Technology
 
