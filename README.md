@@ -100,7 +100,13 @@ end)
 
 The sample ```coap-broker-server-events.js``` will print messages from IoT devices on the console. Please read [101-air-quality-sensor-console-print](https://github.com/DevifyPlatform/devify-server/tree/master/templates/101-air-quality-sensor-console-print) for getting started.
 
-## Developer Quickstart
+### Step 6. Deploy
+
+A Devify application server might be installed and run on an application processor-based high-performance device or a microcontroller device. Typically, the Node.js JavaScript runtime is used for high-performance devices, a JavaScript engines, such as the Mongoose full-stack IoT platform [3] and JerryScript [4] are used for microcontroller-based resource-constrained devices.
+
+The following section introduces how to install a Devify application server on Azure, the cloud-based server.
+
+## Deploy: Cloud-Based Server
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://deploy.azure.com/?repository=https://github.com/DevifyPlatform/devify-server)
 
