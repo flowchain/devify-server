@@ -1,6 +1,6 @@
 ![](http://res.cloudinary.com/jollen/image/upload/h_110/v1455862763/devify-logo_rh63vl.png)
 
-A new way to write IoT application server code.
+A fast way to write IoT application server code running on devices.
 
 # devify-server
 
@@ -8,15 +8,13 @@ A new way to write IoT application server code.
 [![Build Status](https://travis-ci.org/DevifyPlatform/devify-server.svg?branch=master)](https://travis-ci.org/DevifyPlatform/devify-server)
 [![GitHub license](https://img.shields.io/github/license/DevifyPlatform/devify-server.svg)](https://github.com/DevifyPlatform/devify-server)
 
-devify-server, or [*Devify*](https://github.com/DevifyPlatform/devify-server) in a short, is a simple IoT server boilerplate. 
+**devify-server**, or [*Devify*](https://github.com/DevifyPlatform/devify-server), is a set of IoT device server boilerplate. 
 
-*Devify* is extremely light weight, and is very easy to use. It aims to help developers to create IoT application servers, faster.
+*Devify* is written in 100% JavaScript and designed to be light-weight. It aims to help developers to create IoT application servers, faster.
 
 ## Introduction
 
-Devify is an open source project to develop the boilerplates for getting started with IoT cloud servers. It gets you up to speed using IoT and web technologies.
-
-Devify open source project, or **Devify**, is a software framework. Its goal is to create a new way to write IoT server code.
+Devify is an open source project to develop a set of boilerplates for getting started with IoT device servers. It aims to help you developing device server running on IoT devices and using emerging web technologies. In addition, Devify open source project, or **Devify**, itself is a software framework.
 
 ## Quickstart
 
@@ -31,7 +29,7 @@ $ node coap-broker-server-events.js
 
 ## Tutorial
 
-This section introduces a new way to write a CoAP server for getting data from an NodeMCU (ESP8266) device.
+This section introduces the steps to write a CoAP device server to collaborate with an ESP8266 (NodeMCU) IoT device that the device server will receive data from the ESP8266 device.
 
 The following instructions show how to connect NodeMCU to your localhost (PC/Notebook) and send ADC data to localhost  over CoAP.
 
