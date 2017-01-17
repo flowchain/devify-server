@@ -12,9 +12,17 @@ A fast way to write IoT application server code running on devices.
 
 *Devify* is written in 100% JavaScript and designed to be light-weight. It aims to help developers to create IoT application servers, faster.
 
+## What's a Devify ?
+
+Devify is a sub-project of [WoT.City](https://wotcity.com/WoTCity-WhitePaper.pdf) software framework that it proposes a new design software architecture for the development of interoperable Internet of Things (IoT) application server on IoT devices. To begin creating and developing customized such IoT application servers, the Devify provides several boilerplates (project templates) can be used immediately.
+
 ## Introduction
 
-Devify is an open source project to develop a set of boilerplates for getting started with IoT device servers. It aims to help you developing device server running on IoT devices and using emerging web technologies. In addition, Devify open source project, or **Devify**, itself is a software framework.
+Devify is an open source project to develop a set of boilerplates for getting started with IoT device servers. It aims to help you developing device server running on IoT devices and using emerging web technologies. 
+
+## Technology
+
+Devify itself is a broker server that implements REST-style RPC operations. Moreover, the code size of the Devify is extremely light weight; thus, it can run on laptops, mobile devices, and even resource-constrained devices.
 
 ## Quickstart
 
