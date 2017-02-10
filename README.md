@@ -1,6 +1,6 @@
 ![](http://res.cloudinary.com/jollen/image/upload/h_110/v1455862763/devify-logo_rh63vl.png)
 
-A fast way to write IoT application server code running on devices.
+A fast and simple way to write isomorphic Web of Things application servers in the Iot.
 
 # devify-server
 
