@@ -3,7 +3,7 @@
  * The MIT License (MIT)
  *
  * Devify Platform
- * 
+ *
  * Copyright (c) 2016 Devify, Inc.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -12,10 +12,10 @@
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -60,6 +60,7 @@ var wsHandlers = {
  * Prototype and Class
  */
 var Server = function () {
+    this.server = null;
 };
 
 /**
@@ -121,7 +122,7 @@ Server.prototype.start = function(options) {
   var options = options || {};
 
   for (var prop in options) {
-    if (options.hasOwnProperty(prop) 
+    if (options.hasOwnProperty(prop)
         && typeof(this._options[prop]) === 'undefined')
       this._options[prop] = options[prop];
   }
@@ -143,7 +144,14 @@ Server.prototype.start = function(options) {
   server.on('data', this.onData.bind(this));
 
   server.start(router.route, wsHandlers);
+
+  this.server = server;
 };
+
+Server.prototype.shutdown = function(cb) {
+  if (this.server)
+    this.server.shutdown(cb);
+}
 
 /**
  * Create the server instance.
