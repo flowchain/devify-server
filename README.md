@@ -4,9 +4,7 @@ A fast and simple way to write isomorphic Web of Things application servers in t
 
 # devify-server
 
-[![Join the chat at https://gitter.im/DevifyPlatform/devify-server](https://badges.gitter.im/DevifyPlatform/devify-server.svg)](https://gitter.im/DevifyPlatform/devify-server?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://travis-ci.org/DevifyPlatform/devify-server.svg?branch=master)](https://travis-ci.org/DevifyPlatform/devify-server)
-[![GitHub license](https://img.shields.io/github/license/DevifyPlatform/devify-server.svg)](https://github.com/DevifyPlatform/devify-server)
+[![Build Status](https://travis-ci.org/flowchain/devify-server.svg?branch=master)](https://travis-ci.org/flowchain/devify-server)
 
 **devify-server**, or [*Devify*](https://github.com/DevifyPlatform/devify-server), is a set of IoT device server boilerplate. 
 
