@@ -1,4 +1,4 @@
-var server = require('devify-server').coapToWebsocketBroker;
+var server = require('devify-server').CoapToWebsocketProxy;
 
 var onmessage = function(message) {
     // Parse strings to JSON object.

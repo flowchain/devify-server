@@ -1,4 +1,4 @@
-var server = require('devify-server').coapBroker;
+var server = require('devify-server').CoapBroker;
 
 // The email utility
 var email = require('./utilities/email');
