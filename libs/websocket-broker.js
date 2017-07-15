@@ -60,11 +60,16 @@ var wsHandlers = {
  * Prototype and Class
  */
 var Server = function () {
-    this.server = null;
+  this.server = null;
+  this.callbacks = {
+    ondata: function() { return 0; },
+    onnewthing: function() { return 0; },
+    onstart: function() { return 0; }
+  };    
 };
 
 /**
- * The server event handlers
+ * Event callback factory
  */
 Server.prototype.onNewThing = function(thing) {
   // at this server, the thing description is included via a local file
@@ -75,15 +80,14 @@ Server.prototype.onNewThing = function(thing) {
   // register a new thing to WoT framework
   this.registerThing(thing);
 
-  if (typeof(this._options.onnewthing) === 'function') {
-    this._options.onnewthing(thing);
-  }
+  this.callbacks['onnewthing'](thing);
 };
 
+/**
+ * Event callback factory
+ */
 Server.prototype.onData = function(payload) {
-  if (typeof(this._options.onmessage) === 'function') {
-    this._options.onmessage(payload);
-  }
+  this.callbacks['ondata'](payload);
 
   // Send hardware data to FBP network.
   var data = {
@@ -92,6 +96,13 @@ Server.prototype.onData = function(payload) {
     payload: payload
   };
   this._network.send(data);
+};
+
+/**
+ * Event callback factory
+ */
+Server.prototype.onStart = function(payload) {
+  this.callbacks['onstart'](payload);
 };
 
 /**
@@ -121,11 +132,14 @@ Server.prototype.start = function(options) {
   var host = process.env.HOST || 'localhost';
   var options = options || {};
 
-  for (var prop in options) {
-    if (options.hasOwnProperty(prop)
-        && typeof(this._options[prop]) === 'undefined')
-      this._options[prop] = options[prop];
-  }
+  if (options && options.ondata && typeof options.ondata === 'function') 
+    this.callbacks['ondata'] = options.ondata;
+
+  if (options && options.onnewthing && typeof options.onnewthing === 'function')   
+    this.callbacks['onnewthing'] = options.onnewthing;
+
+  if (options && options.onstart && typeof options.onstart === 'function')   
+    this.callbacks['onstart'] = options.onstart;
 
   // Load components
   this._network.load(this._options.components || {});
@@ -139,9 +153,10 @@ Server.prototype.start = function(options) {
   });
   var router = new WebsocketRouter();
 
-  // Thing events from WoT framework
+  // Events callback factory
   server.on('newThing', this.onNewThing.bind(this));
   server.on('data', this.onData.bind(this));
+  server.on('start', this.onStart.bind(this));
 
   server.start(router.route, wsHandlers);
 
@@ -156,10 +171,7 @@ Server.prototype.shutdown = function(cb) {
 /**
  * Create the server instance.
  */
-var wsBrokerImpl = createServer({
-  events: {
-  }
-});
+var wsBrokerImpl = createServer({});
 
 /**
  * Combined server with framework instance.

@@ -26,12 +26,12 @@
  *
  */
 
-var coapBroker = require('./coap-broker')
-  , coapToWebsocketBroker = require("./coap-to-websocket-broker")
-  , websocketBroker = require("./websocket-broker");
+var CoapBroker = require('./coap-broker')
+  , WebsocketBroker = require("./websocket-broker")
+  , CoapToWebsocketProxy = require("./coap-proxy-websocket");
 
  module.exports = {
- 	coapBroker: coapBroker,
- 	coapToWebsocketBroker: coapToWebsocketBroker,
- 	websocketBroker: websocketBroker
+ 	CoapBroker: coapBroker,
+ 	WebsocketBroker: websocketBroker,
+ 	CoapToWebsocketProxy: CoapToWebsocketProxy
  };
