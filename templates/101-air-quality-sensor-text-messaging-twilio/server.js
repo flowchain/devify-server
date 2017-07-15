@@ -1,4 +1,4 @@
-var server = require('devify-server').coapBroker;
+var server = require('devify-server').CoapBroker;
 
 // Twilio Credentials 
 // Sendgrid credentials.
