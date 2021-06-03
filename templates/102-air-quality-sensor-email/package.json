@@ -13,14 +13,13 @@
   "homepage": "https://github.com/DevifyPlatform/devify-server.git",
   "dependencies": {
     "devify-server": "*",
-    "nodemailer": "^2.3.0",
+    "nodemailer": "^6.6.1",
     "smtpapi": "^1.2.0"
   },
   "scripts": {
     "test": "make test",
     "start": "node ./server.js"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "license": "MIT License"
 }
