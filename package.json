@@ -17,6 +17,7 @@
     "bluebird": "^3.7.2",
     "bson": "^4.4.0",
     "coap": "^0.24.0",
+    "nodemailer": "^6.6.1",
     "util": "^0.10.3",
     "utils-merge": "^1.0.0",
     "websocket": "^1.0.34",
