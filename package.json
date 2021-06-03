@@ -13,12 +13,13 @@
   },
   "homepage": "https://github.com/DevifyPlatform/devify-server.git",
   "dependencies": {
-    "bl": "^0.9.4",
-    "bluebird": "^3.3.3",
-    "coap": "^0.10.3",
+    "bl": "^5.0.0",
+    "bluebird": "^3.7.2",
+    "bson": "^4.4.0",
+    "coap": "^0.24.0",
     "util": "^0.10.3",
     "utils-merge": "^1.0.0",
-    "websocket": "^1.0.17",
+    "websocket": "^1.0.34",
     "wotcity.io": "^0.9.3"
   },
   "scripts": {
@@ -27,8 +28,8 @@
   },
   "devDependencies": {
     "codecov": "^1.0.1",
-    "mocha": "^2.4.5",
-    "twilio": "^2.9.0"
+    "mocha": "^8.4.0",
+    "twilio": "^3.63.1"
   },
   "license": "MIT License"
 }
