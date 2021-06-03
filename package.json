@@ -27,7 +27,7 @@
     "start": "node ./websocket-broker-server.js"
   },
   "devDependencies": {
-    "codecov": "^1.0.1",
+    "codecov": "^3.7.1",
     "mocha": "^8.4.0",
     "twilio": "^3.63.1"
   },
